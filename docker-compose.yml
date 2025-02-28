@@ -17,7 +17,7 @@ services:
       - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
       - pelmen-frontend-dist:/usr/share/nginx/html
     ports:
-      - '8081:80'
+      - '81:81'
     depends_on:
       - frontend
 
