@@ -1,5 +1,11 @@
 <template>
-  <a-scene physics="driver: ammo; debug: true" device-orientation-permission-ui="enabled: false">
+  <a-scene
+    physics="driver: ammo; debug: true"
+    device-orientation-permission-ui="enabled: false"
+    vr-mode-ui="enabled: true"
+    embedded
+    arjs="sourceType: webcam; debugUIEnabled: false;"
+  >
     <!-- Небо и земля для создания локации -->
     <a-sky color="#87CEEB"></a-sky>
     <a-plane rotation="-90 0 0" width="50" height="50" color="#7BC8A4" static-body></a-plane>
@@ -15,23 +21,27 @@
     <a-box position="0 1 -5" ammo-body="type: dynamic" ammo-shape="type: box"></a-box>
 
     <!-- Руки игрока с поддержкой захвата -->
-    <a-entity
-      id="leftHand"
-      geometry="primitive: sphere; radius: 0.1"
-      material="color: #ffcccc"
-      position="-0.2 1.5 -0.5"
-      super-hands="usePhysics: only; constraintComponentName: ammo-constraint"
-    ></a-entity>
-    <a-entity
-      id="rightHand"
-      geometry="primitive: sphere; radius: 0.1"
-      material="color: #ffcccc"
-      position="0.2 1.5 -0.5"
-      super-hands="usePhysics: only; constraintComponentName: ammo-constraint"
-    ></a-entity>
-
-    <!-- Камера для наблюдения (можно использовать как fallback для не-VR режима) -->
-    <a-entity camera position="0 1.6 0"></a-entity>
+    <a-entity id="camera" camera position="0 1.6 0" look-controls="pointerLockEnabled: true">
+      <a-entity
+        id="leftHand"
+        geometry="primitive: sphere; radius: 0.1"
+        material="color: #ffcccc"
+        position="-0.2 1.5 -0.5"
+        super-hands="usePhysics: only; constraintComponentName: ammo-constraint"
+        raycaster="objects: .interactive"
+        oculus-touch-controls="hand: left"
+      ></a-entity>
+      <a-entity
+        id="rightHand"
+        geometry="primitive: sphere; radius: 0.1"
+        material="color: #ffcccc"
+        position="0.2 1.5 -0.5"
+        super-hands="usePhysics: only; constraintComponentName: ammo-constraint"
+        raycaster="objects: .interactive"
+        oculus-touch-controls="hand: right"
+        oculus-thumbstick-controls
+      ></a-entity>
+    </a-entity>
   </a-scene>
 </template>
 
