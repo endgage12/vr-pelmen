@@ -1,5 +1,5 @@
 <template>
-  <a-scene>
+  <a-scene device-orientation-permission-ui="enabled: false">
     <div class="flex">
       <a-entity camera position="0 1.6 0"></a-entity>
 
