@@ -15,11 +15,13 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@c-frame/aframe-physics-system": "^4.2.3",
     "@tailwindcss/vite": "^4.0.9",
     "aframe": "^1.7.0",
-    "aframe-physics-system": "^4.0.2",
+    "ammo.js": "github:mozillareality/ammo.js#hubs/master",
     "pinia": "^3.0.1",
     "tailwindcss": "^4.0.9",
+    "three-to-ammo": "^1.0.1",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },

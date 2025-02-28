@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb234792-6862-49b2-8145-698cf6161674" name="Changes" comment="disable 443">
+    <list default="true" id="bb234792-6862-49b2-8145-698cf6161674" name="Changes" comment="test location">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.ts" afterDir="false" />
@@ -55,7 +56,7 @@
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
-    "prettierjs.PrettierConfiguration.Package": "/home/alexandr/projects/vr/pelmen/node_modules/prettier",
+    "prettierjs.PrettierConfiguration.Package": "/home/alexandr/projects/vr/pelmen/frontend/node_modules/prettier",
     "settings.editor.selected.configurable": "settings.javascript.prettier",
     "ts.external.directory.path": "/home/alexandr/projects/vr/pelmen/frontend/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
@@ -66,6 +67,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/public/js" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/frontend" />
     </key>
@@ -87,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1740745504906</updated>
       <workItem from="1740745505954" duration="2143000" />
-      <workItem from="1740747663552" duration="3284000" />
+      <workItem from="1740747663552" duration="4981000" />
     </task>
     <task id="LOCAL-00001" summary="81 port use">
       <option name="closed" value="true" />
@@ -105,16 +107,26 @@
       <option name="project" value="LOCAL" />
       <updated>1740752082133</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test location">
+      <option name="closed" value="true" />
+      <created>1740752755559</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740752755559</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="81 port use" />
     <MESSAGE value="disable 443" />
-    <option name="LAST_COMMIT_MESSAGE" value="disable 443" />
+    <MESSAGE value="test location" />
+    <option name="LAST_COMMIT_MESSAGE" value="test location" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
