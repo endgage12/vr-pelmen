@@ -1135,6 +1135,17 @@ acorn@^8.14.0, acorn@^8.9.0:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.14.0.tgz#063e2c70cac5fb4f6467f0b11152e04c682795b0"
   integrity sha512-cl669nCJTZBsL97OF4kUQm5g5hC2uihk0NxY3WENAC0TYdILVkAyHymAntgxGkl7K+t0cXIrH5siy5S4XkFycA==
 
+aframe-physics-system@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/aframe-physics-system/-/aframe-physics-system-4.0.2.tgz#9960c1e3901a437a959a7097ca225300ab378895"
+  integrity sha512-VMODEXlzEDLGs9MQ1yAWl08TuS3Chtx7+L/CTy3NAv4Zks+Ae9Qf4eu0vtN9aX5/1jiPswl5pzpcJQURZC67GA==
+  dependencies:
+    ammo-debug-drawer "^0.1.0"
+    cannon-es "^0.9.1"
+    three-to-ammo "^0.1.0"
+    three-to-cannon "^3.0.2"
+    webworkify "^1.4.0"
+
 aframe@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/aframe/-/aframe-1.7.0.tgz#556b3e4881d6cb45c37091edec2298b10a5f86f5"
@@ -1162,6 +1173,11 @@ alien-signals@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/alien-signals/-/alien-signals-1.0.4.tgz#c696a5dc9963fc648ae97093411d7e74b0a81ac0"
   integrity sha512-DJqqQD3XcsaQcQ1s+iE2jDUZmmQpXwHiR6fCAim/w87luaW+vmLY8fMlrdkmRwzaFXhkxf3rqPCR59tKVv1MDw==
+
+ammo-debug-drawer@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/ammo-debug-drawer/-/ammo-debug-drawer-0.1.0.tgz#ffa4728445101fbc8f92e4b812f12e594401512e"
+  integrity sha512-GIfIf748qpfg++iXFzTB1p/M7ncJK5/X2qkg7mAQm4SPyhx93PSEejSEsZiPnk8eUUwlpyPSRMPDnpITMvlJCg==
 
 an-array@^1.0.0:
   version "1.0.0"
@@ -1289,6 +1305,11 @@ caniuse-lite@^1.0.30001688:
   version "1.0.30001701"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001701.tgz#ad9c90301f7153cf6b3314d16cc30757285bf9e7"
   integrity sha512-faRs/AW3jA9nTwmJBSO1PQ6L/EOgsB5HMQQq4iCu5zhPgVVgO/pZRHlmatwijZKetFw8/Pr4q6dEN8sJuq8qTw==
+
+cannon-es@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/cannon-es/-/cannon-es-0.9.1.tgz#b19c41080ad5064e7c55039475a7fe6b4bf7115c"
+  integrity sha512-wWzbWQJ4yDiIkmGiAEWVG8rKCLJv88C68JJmGVEBRXpGJZIwbcyWWP18zXZYpy9vYM8v/usupCTpbgMGcb1ogA==
 
 centra@^2.7.0:
   version "2.7.0"
@@ -2809,6 +2830,16 @@ three-bmfont-text@dmarcos/three-bmfont-text#eed4878795be9b3e38cf6aec6b903f56acd1
     nice-color-palettes "^3.0.0"
     quad-indices "^2.0.1"
 
+three-to-ammo@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/three-to-ammo/-/three-to-ammo-0.1.0.tgz#f88e6783940c5eb43826346efd27712b2bdd2f32"
+  integrity sha512-+XxlQdAlU20NHjA0As7tRUsTy9VutK6bhB+QiQx0vcET5m5t1l4/mmbXPy4aNnLnvRDWE3bepBvT8DC2OX15Jg==
+
+three-to-cannon@^3.0.2:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/three-to-cannon/-/three-to-cannon-3.1.0.tgz#89ae51ebe94255e5499606c9b086b925a4aa46cf"
+  integrity sha512-afIvLiI4svuxubPFzEDc/Wc23SEeHy0LqdE4PQiVFwyzqCHrl3em8hwYY7Mi24ceiIMdM2/+zlZzyAJZDwMT9w==
+
 "three@npm:super-three@0.173.4":
   version "0.173.4"
   resolved "https://registry.yarnpkg.com/super-three/-/super-three-0.173.4.tgz#abf8693916dbc12d7d4f80538828dc63ca656d34"
@@ -3011,6 +3042,11 @@ vue@^3.5.13:
     "@vue/runtime-dom" "3.5.13"
     "@vue/server-renderer" "3.5.13"
     "@vue/shared" "3.5.13"
+
+webworkify@^1.4.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/webworkify/-/webworkify-1.5.0.tgz#734ad87a774de6ebdd546e1d3e027da5b8f4a42c"
+  integrity sha512-AMcUeyXAhbACL8S2hqqdqOLqvJ8ylmIbNwUIqQujRSouf4+eUFaXbG6F1Rbu+srlJMmxQWsiU7mOJi0nMBfM1g==
 
 which@^2.0.1:
   version "2.0.2"

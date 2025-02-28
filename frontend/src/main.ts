@@ -3,6 +3,7 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import 'aframe'
+import 'aframe-physics-system'
 
 import App from './App.vue'
 import router from './router'
