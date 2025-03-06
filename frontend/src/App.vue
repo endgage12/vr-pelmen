@@ -1,6 +1,6 @@
 <template>
   <a-scene
-    physics="driver: ammo; debug: true"
+    physics="driver: ammo; debug: true; gravity: -9.8"
     device-orientation-permission-ui="enabled: false"
     vr-mode-ui="enabled: true"
     embedded
@@ -30,6 +30,7 @@
         super-hands="usePhysics: only; constraintComponentName: ammo-constraint"
         raycaster="objects: .interactive"
         oculus-touch-controls="hand: left"
+        meta-touch-controls="hand: left"
       ></a-entity>
       <a-entity
         id="rightHand"
@@ -39,9 +40,21 @@
         super-hands="usePhysics: only; constraintComponentName: ammo-constraint"
         raycaster="objects: .interactive"
         oculus-touch-controls="hand: right"
+        meta-touch-controls="hand: right"
         oculus-thumbstick-controls
       ></a-entity>
     </a-entity>
+
+    <!-- Плоскость для передвижения -->
+    <a-plane
+      id="movement-plane"
+      position="0 0 -5"
+      rotation="-90 0 0"
+      width="10"
+      height="10"
+      color="#ccc"
+      static-body
+    ></a-plane>
   </a-scene>
 </template>
 

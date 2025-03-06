@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb234792-6862-49b2-8145-698cf6161674" name="Changes" comment="physics engine ammo added">
+    <list default="true" id="bb234792-6862-49b2-8145-698cf6161674" name="Changes" comment="try launch VR">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
     </list>
@@ -85,7 +85,8 @@
       <option name="presentableId" value="Default" />
       <updated>1740745504906</updated>
       <workItem from="1740745505954" duration="2143000" />
-      <workItem from="1740747663552" duration="6276000" />
+      <workItem from="1740747663552" duration="8036000" />
+      <workItem from="1741291849630" duration="793000" />
     </task>
     <task id="LOCAL-00001" summary="81 port use">
       <option name="closed" value="true" />
@@ -119,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740754467925</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="try launch VR">
+      <option name="closed" value="true" />
+      <created>1740755749591</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740755749591</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +140,8 @@
     <MESSAGE value="disable 443" />
     <MESSAGE value="test location" />
     <MESSAGE value="physics engine ammo added" />
-    <option name="LAST_COMMIT_MESSAGE" value="physics engine ammo added" />
+    <MESSAGE value="try launch VR" />
+    <option name="LAST_COMMIT_MESSAGE" value="try launch VR" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
