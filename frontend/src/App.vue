@@ -6,6 +6,25 @@
     embedded
     arjs="sourceType: webcam; debugUIEnabled: false;"
   >
+    <a-assets>
+      <!-- Загружаем модель утки -->
+      <a-asset-item
+        id="duckModel"
+        src="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Duck/glTF/Duck.gltf"
+      ></a-asset-item>
+
+      <!-- Загружаем модель AK-74M -->
+      <a-asset-item id="ak74Model" src="/public/ak-74m/scene.gltf"></a-asset-item>
+    </a-assets>
+
+    <a-gltf-model src="#duckModel" position="0 3 -15" scale="1 1 1" dynamic-body></a-gltf-model>
+    <a-gltf-model
+      src="#ak74Model"
+      position="0 3 -1"
+      scale="0.2 0.2 0.2"
+      dynamic-body
+    ></a-gltf-model>
+
     <!-- Небо и земля для создания локации -->
     <a-sky color="#87CEEB"></a-sky>
     <a-plane rotation="-90 0 0" width="50" height="50" color="#7BC8A4" static-body></a-plane>
@@ -21,7 +40,13 @@
     <a-box position="0 1 -5" ammo-body="type: dynamic" ammo-shape="type: box"></a-box>
 
     <!-- Руки игрока с поддержкой захвата -->
-    <a-entity id="camera" camera position="0 1.6 0" look-controls="pointerLockEnabled: true">
+    <a-entity
+      id="camera"
+      camera
+      position="0 1.6 0"
+      look-controls="pointerLockEnabled: true"
+      wasd-controls="acceleration:100"
+    >
       <a-entity
         id="leftHand"
         geometry="primitive: sphere; radius: 0.1"
@@ -29,8 +54,12 @@
         position="-0.2 1.5 -0.5"
         super-hands="usePhysics: only; constraintComponentName: ammo-constraint"
         raycaster="objects: .interactive"
+        vive-controls="hand: left"
         oculus-touch-controls="hand: left"
-        meta-touch-controls="hand: left"
+        grabbable
+        stretchable
+        draggable
+        visible="true"
       ></a-entity>
       <a-entity
         id="rightHand"
@@ -39,22 +68,14 @@
         position="0.2 1.5 -0.5"
         super-hands="usePhysics: only; constraintComponentName: ammo-constraint"
         raycaster="objects: .interactive"
+        vive-controls="hand: right"
         oculus-touch-controls="hand: right"
-        meta-touch-controls="hand: right"
-        oculus-thumbstick-controls
+        grabbable
+        stretchable
+        draggable
+        visible="true"
       ></a-entity>
     </a-entity>
-
-    <!-- Плоскость для передвижения -->
-    <a-plane
-      id="movement-plane"
-      position="0 0 -5"
-      rotation="-90 0 0"
-      width="10"
-      height="10"
-      color="#ccc"
-      static-body
-    ></a-plane>
   </a-scene>
 </template>
 

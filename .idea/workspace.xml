@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb234792-6862-49b2-8145-698cf6161674" name="Changes" comment="try launch VR">
+    <list default="true" id="bb234792-6862-49b2-8145-698cf6161674" name="Changes" comment="gravity physics added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +66,8 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/public" />
+      <recent name="$PROJECT_DIR$/frontend/src/assets" />
       <recent name="$PROJECT_DIR$/frontend/public/js" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/frontend" />
@@ -86,7 +91,7 @@
       <updated>1740745504906</updated>
       <workItem from="1740745505954" duration="2143000" />
       <workItem from="1740747663552" duration="8036000" />
-      <workItem from="1741291849630" duration="793000" />
+      <workItem from="1741291849630" duration="10499000" />
     </task>
     <task id="LOCAL-00001" summary="81 port use">
       <option name="closed" value="true" />
@@ -128,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740755749591</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="gravity physics added">
+      <option name="closed" value="true" />
+      <created>1741292890693</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1741292890693</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,7 +154,8 @@
     <MESSAGE value="test location" />
     <MESSAGE value="physics engine ammo added" />
     <MESSAGE value="try launch VR" />
-    <option name="LAST_COMMIT_MESSAGE" value="try launch VR" />
+    <MESSAGE value="gravity physics added" />
+    <option name="LAST_COMMIT_MESSAGE" value="gravity physics added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
