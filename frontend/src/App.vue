@@ -1,8 +1,8 @@
 <template>
   <div v-if="!isSceneLoaded" class="flex">Loading...</div>
 
-  <!--  <TestStand v-else></TestStand>-->
-  <Storybook v-else></Storybook>
+  <TestStand v-else></TestStand>
+  <!--  <Storybook v-else></Storybook>-->
 </template>
 
 <script setup lang="ts">

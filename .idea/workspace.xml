@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb234792-6862-49b2-8145-698cf6161674" name="Changes" comment="for test purposes">
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/Storybook.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/TestStand.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
     </list>
@@ -105,7 +103,7 @@
       <workItem from="1740747663552" duration="8036000" />
       <workItem from="1741291849630" duration="17283000" />
       <workItem from="1741468312763" duration="599000" />
-      <workItem from="1741552181382" duration="34158000" />
+      <workItem from="1741552181382" duration="34298000" />
     </task>
     <task id="LOCAL-00001" summary="81 port use">
       <option name="closed" value="true" />
@@ -315,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741700846579</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1741707976111</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1741707976111</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
