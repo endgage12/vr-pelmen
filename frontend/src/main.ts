@@ -1,10 +1,10 @@
 import './assets/main.css'
-import '../src/components/oculus-thumbstick-controls.js'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
 import 'aframe'
+import '../src/components/oculus-thumbstick-controls.js'
 
 import App from './App.vue'
 import router from './router'
