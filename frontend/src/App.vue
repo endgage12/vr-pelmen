@@ -32,12 +32,17 @@
     <!-- Декоративные элементы: здания или статичные объекты -->
     <a-box position="-8 1 -12" depth="2" height="2" width="2" color="#4CC3D9" static-body></a-box>
     <a-box position="10 2 -20" depth="4" height="4" width="4" color="#FFC65D" static-body></a-box>
+    <a-sphere position="6 2 -20" color="yellow" radius="3"></a-sphere>
 
     <!-- Объект, который можно захватить и кинуть (куб) -->
     <a-box position="0 3 -5" depth="1" height="1" width="1" color="#EF2D5E" dynamic-body grabbable>
     </a-box>
 
     <a-box position="0 1 -5" ammo-body="type: dynamic" ammo-shape="type: box"></a-box>
+
+    <a-camera>
+      <a-cursor></a-cursor>
+    </a-camera>
 
     <!-- Player. -->
     <a-entity id="cameraRig">
