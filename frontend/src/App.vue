@@ -2,7 +2,7 @@
   <div v-show="!isSceneLoaded" class="flex">Loading...</div>
 
   <!--  <TestStand @loaded="onLoadedScene" v-show="isSceneLoaded"></TestStand>-->
-  <Storybook v-show="isSceneLoaded"></Storybook>
+  <Storybook @loaded="onLoadedScene" v-show="isSceneLoaded"></Storybook>
 </template>
 
 <script setup lang="ts">
