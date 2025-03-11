@@ -81,10 +81,15 @@
 
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
+import { onBeforeMount } from 'vue'
 
 const onGripDown = (hand: string) => {
   console.log(hand)
 }
+
+onBeforeMount(() => {
+  console.log('onBeforeMount')
+})
 </script>
 
 <style scoped></style>
