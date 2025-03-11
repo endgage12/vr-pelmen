@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bb234792-6862-49b2-8145-698cf6161674" name="Changes" comment="ssl cert for https">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx/ssl/certificate.key" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/ssl_old/certificate.key" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx/ssl/certificate.pem" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/ssl_old/certificate.pem" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +89,7 @@
       <workItem from="1740747663552" duration="8036000" />
       <workItem from="1741291849630" duration="17283000" />
       <workItem from="1741468312763" duration="599000" />
-      <workItem from="1741552181382" duration="19418000" />
+      <workItem from="1741552181382" duration="20112000" />
     </task>
     <task id="LOCAL-00001" summary="81 port use">
       <option name="closed" value="true" />
@@ -167,7 +163,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741638979412</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="ssl cert for https">
+      <option name="closed" value="true" />
+      <created>1741689344327</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1741689344327</updated>
+    </task>
+    <task id="LOCAL-00011" summary="ssl cert for https">
+      <option name="closed" value="true" />
+      <created>1741689351161</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1741689351161</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
