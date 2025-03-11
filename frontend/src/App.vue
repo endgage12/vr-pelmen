@@ -42,9 +42,9 @@
 
     <!-- Игровой риг с камерой и контроллерами -->
     <a-entity id="rig" oculus-thumbstick-controls>
-      <a-camera id="camera"></a-camera>
-      <a-entity laser-controls="hand: left; model: true;"></a-entity>
-      <a-entity laser-controls="hand: right; model: true;"></a-entity>
+      <a-camera id="camera" oculus-thumbstick-controls></a-camera>
+      <a-entity meta-touch-controls="hand: left; model: true;"></a-entity>
+      <a-entity meta-touch-controls="hand: right; model: true;"></a-entity>
     </a-entity>
 
     <!-- Ваши 3D-объекты -->

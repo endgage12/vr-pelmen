@@ -1,19 +1,19 @@
 AFRAME.registerComponent('oculus-thumbstick-controls', {
   schema: {
-    acceleration: { default: 45 },
-    rigSelector: { default: '#rig' },
-    fly: { default: false },
-    controllerOriented: { default: false },
-    adAxis: { default: 'x', oneOf: ['x', 'y', 'z'] },
-    wsAxis: { default: 'z', oneOf: ['x', 'y', 'z'] },
-    enabled: { default: true },
-    adEnabled: { default: true },
-    adInverted: { default: false },
-    wsEnabled: { default: true },
-    wsInverted: { default: false },
+    acceleration: { type: 'number', default: 45 },
+    rigSelector: { type: 'string', default: '#rig' },
+    fly: { type: 'boolean', default: false },
+    controllerOriented: { type: 'boolean', default: false },
+    adAxis: { type: 'string', default: 'x', oneOf: ['x', 'y', 'z'] },
+    wsAxis: { type: 'string', default: 'z', oneOf: ['x', 'y', 'z'] },
+    enabled: { type: 'boolean', default: true },
+    adEnabled: { type: 'boolean', default: true },
+    adInverted: { type: 'boolean', default: false },
+    wsEnabled: { type: 'boolean', default: true },
+    wsInverted: { type: 'boolean', default: false },
   },
 
-  init: function () {
+  init() {
     this.easing = 1.1
     this.velocity = new THREE.Vector3(0, 0, 0)
     this.tsData = new THREE.Vector2(0, 0)
@@ -21,23 +21,21 @@ AFRAME.registerComponent('oculus-thumbstick-controls', {
     this.el.addEventListener('thumbstickmoved', this.thumbstickMoved)
   },
 
-  update: function () {
+  update() {
     this.rigElement = document.querySelector(this.data.rigSelector)
   },
 
-  tick: function (time, delta) {
+  tick(time, delta) {
     if (!this.el.sceneEl.is('vr-mode')) return
 
-    var data = this.data
-    var el = this.rigElement
-    var velocity = this.velocity
+    const { data, rigElement: el, velocity } = this
 
     if (!velocity[data.adAxis] && !velocity[data.wsAxis] && !this.tsData.length()) {
       return
     }
 
     // Update velocity.
-    delta = delta / 1000
+    delta /= 1000
     this.updateVelocity(delta)
 
     if (!velocity[data.adAxis] && !velocity[data.wsAxis]) {
@@ -48,40 +46,33 @@ AFRAME.registerComponent('oculus-thumbstick-controls', {
     el.object3D.position.add(this.getMovementVector(delta))
   },
 
-  thumbstickMoved: function (evt) {
-    var data = this.data
-    var tsData = this.tsData
-    var axis = evt.detail.axis
-    var value = evt.detail.value
-
+  thumbstickMoved(evt) {
+    const { axis, value } = evt.detail
     if (axis === 'x') {
-      tsData.x = value
+      this.tsData.x = value
     } else if (axis === 'y') {
-      tsData.y = value
+      this.tsData.y = value
     }
   },
 
-  updateVelocity: function (delta) {
-    var data = this.data
-    var velocity = this.velocity
-    var tsData = this.tsData
+  updateVelocity(delta) {
+    const { data, velocity, tsData } = this
 
     if (tsData.length() === 0) {
       return
     }
 
-    var direction = new THREE.Vector3(tsData.x, 0, tsData.y).normalize()
-    var speed = data.acceleration * delta
+    const direction = new THREE.Vector3(tsData.x, 0, tsData.y).normalize()
+    const speed = data.acceleration * delta
     velocity.add(direction.multiplyScalar(speed))
 
     // Apply damping.
     velocity.multiplyScalar(this.easing)
   },
 
-  getMovementVector: function (delta) {
-    var data = this.data
-    var velocity = this.velocity
-    var direction = new THREE.Vector3(0, 0, 0)
+  getMovementVector(delta) {
+    const { data, velocity } = this
+    const direction = new THREE.Vector3(0, 0, 0)
 
     if (velocity[data.adAxis]) {
       direction[data.adAxis] = velocity[data.adAxis]
