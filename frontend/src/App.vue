@@ -41,16 +41,10 @@
     <a-box position="0 1 -5" ammo-body="type: dynamic" ammo-shape="type: box"></a-box>
 
     <!-- Игровой риг с камерой и контроллерами -->
-    <a-entity id="rig">
+    <a-entity id="rig" oculus-thumbstick-controls>
       <a-camera id="camera"></a-camera>
-      <a-entity
-        laser-controls="hand: left; model: true;"
-        raycaster="near: 0.1; far: 3; objects: .clickable"
-      ></a-entity>
-      <a-entity
-        laser-controls="hand: right; model: true;"
-        raycaster="near: 0.1; far: 3; objects: .clickable"
-      ></a-entity>
+      <a-entity laser-controls="hand: left; model: true;"></a-entity>
+      <a-entity laser-controls="hand: right; model: true;"></a-entity>
     </a-entity>
 
     <!-- Ваши 3D-объекты -->

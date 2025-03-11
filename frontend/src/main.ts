@@ -1,4 +1,5 @@
 import './assets/main.css'
+import '../src/components/oculus-thumbstick-controls.js'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
