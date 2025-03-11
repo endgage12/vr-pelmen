@@ -10,11 +10,13 @@
       geometry="primitive:plane"
     ></a-text>
 
+    <a-entity ref="rig" id="rig" position="0 0 0">
+      <a-entity camera wasd-control look-controls position="0 1.65 0"></a-entity>
+    </a-entity>
+
     <a-entity
-      @controllerconnected="onControllerConnected"
-      @controllerdisconnected="onControllerDisconnected"
-      @axismove="onAxisMove"
-      tracked-controls="controller: 0; idPrefix: OpenVR; hand: left; handModelStyle: lowPoly; model: true; color: #ffcccc"
+      @thumbstickmoved="onThumbstickMoved"
+      meta-touch-controls="hand: left; model: true;"
     ></a-entity>
 
     <a-entity
@@ -30,6 +32,7 @@ import { ref } from 'vue'
 const emit = defineEmits(['loaded'])
 
 const vrLogger = ref()
+const rig = ref()
 
 const onLoad = () => {
   emit('loaded', true)
@@ -49,6 +52,10 @@ const onAxisMove = (e: any) => {
 
 const onThumbstickMoved = (e: any) => {
   vrLogger.value.setAttribute('value', JSON.stringify(e.detail))
+  const vectorX = e.detail.x
+  const vectorY = e.detail.y
+
+  rig.value.setAttribute('position', `${vectorX} 0 ${vectorY}`)
 }
 </script>
 
