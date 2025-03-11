@@ -26,6 +26,8 @@ AFRAME.registerComponent('oculus-thumbstick-controls', {
   },
 
   tick(time, delta) {
+    const vrLogger = document.querySelector('#vrLogger').components['vr-logger']
+    vrLogger.log('Это тестовое сообщение')
     // if (!this.el.sceneEl.is('vr-mode')) return
 
     const { data, rigElement: el, velocity } = this
@@ -47,6 +49,8 @@ AFRAME.registerComponent('oculus-thumbstick-controls', {
   },
 
   thumbstickMoved(evt) {
+    const vrLogger = document.querySelector('#vrLogger').components['vr-logger']
+    vrLogger.log('Это тестовое сообщение')
     const { axis, value } = evt.detail
     if (axis === 'x') {
       this.tsData.x = value
@@ -59,6 +63,8 @@ AFRAME.registerComponent('oculus-thumbstick-controls', {
     const { data, velocity, tsData } = this
 
     if (tsData.length() === 0) {
+      const vrLogger = document.querySelector('#vrLogger').components['vr-logger']
+      vrLogger.log('No thumbstick data, skipping velocity update')
       console.log('No thumbstick data, skipping velocity update')
       return
     }

@@ -28,6 +28,7 @@
     <!-- Небо и земля для создания локации -->
     <a-sky color="#87CEEB"></a-sky>
     <a-plane rotation="-90 0 0" width="50" height="50" color="#7BC8A4" static-body></a-plane>
+    <a-entity vr-logger id="vrLogger"></a-entity>
 
     <!-- Декоративные элементы: здания или статичные объекты -->
     <a-box position="-8 1 -12" depth="2" height="2" width="2" color="#4CC3D9" static-body></a-box>
