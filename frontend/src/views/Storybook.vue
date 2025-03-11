@@ -16,6 +16,11 @@
       @axismove="onAxisMove"
       tracked-controls="controller: 0; idPrefix: OpenVR; hand: left; handModelStyle: lowPoly; model: true; color: #ffcccc"
     ></a-entity>
+
+    <a-entity
+      @thumbstickmoved="onThumbstickMoved"
+      meta-touch-controls="hand: right; model: true;"
+    ></a-entity>
   </a-scene>
 </template>
 
@@ -39,6 +44,10 @@ const onControllerDisconnected = () => {
 }
 
 const onAxisMove = (e: any) => {
+  vrLogger.value.setAttribute('value', JSON.stringify(e.detail))
+}
+
+const onThumbstickMoved = (e: any) => {
   vrLogger.value.setAttribute('value', JSON.stringify(e.detail))
 }
 </script>
