@@ -12,17 +12,17 @@
 
     <a-entity ref="rig" id="rig" position="0 0 0">
       <a-entity camera wasd-control look-controls position="0 1.65 0"></a-entity>
+
+      <a-entity
+        @thumbstickmoved="onThumbstickMoved"
+        meta-touch-controls="hand: left; model: true;"
+      ></a-entity>
+
+      <a-entity
+        @thumbstickmoved="onThumbstickMoved"
+        meta-touch-controls="hand: right; model: true;"
+      ></a-entity>
     </a-entity>
-
-    <a-entity
-      @thumbstickmoved="onThumbstickMoved"
-      meta-touch-controls="hand: left; model: true;"
-    ></a-entity>
-
-    <a-entity
-      @thumbstickmoved="onThumbstickMoved"
-      meta-touch-controls="hand: right; model: true;"
-    ></a-entity>
   </a-scene>
 </template>
 
@@ -55,7 +55,9 @@ const onThumbstickMoved = (e: any) => {
   const vectorX = e.detail.x
   const vectorY = e.detail.y
 
-  rig.value.setAttribute('position', `${vectorX} 0 ${vectorY}`)
+  const prevPosition = rig.value.getAttribute('position')
+  const nextPosition = `${vectorX} ${vectorY} ${prevPosition.z}`
+  rig.value.setAttribute('position', nextPosition)
 }
 </script>
 
