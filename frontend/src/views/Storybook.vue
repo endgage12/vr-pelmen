@@ -14,7 +14,7 @@
       @controllerconnected="onControllerConnected"
       @controllerdisconnected="onControllerDisconnected"
       @axismove="onAxisMove"
-      tracked-controls="controller: 0; idPrefix: OpenVR; hand: left; handModelStyle: lowPoly; color: #ffcccc"
+      tracked-controls="controller: 0; idPrefix: OpenVR; hand: left; handModelStyle: lowPoly; model: true; color: #ffcccc"
     ></a-entity>
   </a-scene>
 </template>
