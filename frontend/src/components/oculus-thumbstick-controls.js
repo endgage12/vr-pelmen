@@ -59,11 +59,7 @@ AFRAME.registerComponent('oculus-thumbstick-controls', {
   updateVelocity(delta) {
     const { data, velocity, tsData } = this
 
-    if (tsData.length() === 0) {
-      this.vrLogger.setAttribute('value', 'No thumbstick data, skipping velocity update')
-      return
-    }
-    this.vrLogger.setAttribute('value', 'thumbstick is on')
+    // this.vrLogger.setAttribute('value', 'thumbstick is on')
 
     const direction = new THREE.Vector3(tsData.x, 0, tsData.y).normalize()
     const speed = data.acceleration * delta
