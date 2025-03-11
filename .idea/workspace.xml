@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bb234792-6862-49b2-8145-698cf6161674" name="Changes" comment="for test purposes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/oculus-thumbstick-controls.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/oculus-thumbstick-controls.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +91,7 @@
       <workItem from="1740747663552" duration="8036000" />
       <workItem from="1741291849630" duration="17283000" />
       <workItem from="1741468312763" duration="599000" />
-      <workItem from="1741552181382" duration="26101000" />
+      <workItem from="1741552181382" duration="27110000" />
     </task>
     <task id="LOCAL-00001" summary="81 port use">
       <option name="closed" value="true" />
@@ -253,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741696190468</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1741696293564</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1741696293564</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

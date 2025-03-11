@@ -26,21 +26,21 @@ AFRAME.registerComponent('oculus-thumbstick-controls', {
   },
 
   tick(time, delta) {
-    if (!this.el.sceneEl.is('vr-mode')) return
+    // if (!this.el.sceneEl.is('vr-mode')) return
 
     const { data, rigElement: el, velocity } = this
 
-    if (!velocity[data.adAxis] && !velocity[data.wsAxis] && !this.tsData.length()) {
-      return
-    }
+    // if (!velocity[data.adAxis] && !velocity[data.wsAxis] && !this.tsData.length()) {
+    //   return
+    // }
 
     // Update velocity.
     delta /= 1000
     this.updateVelocity(delta)
 
-    if (!velocity[data.adAxis] && !velocity[data.wsAxis]) {
-      return
-    }
+    // if (!velocity[data.adAxis] && !velocity[data.wsAxis]) {
+    //   return
+    // }
 
     // Get movement vector and translate position.
     el.object3D.position.add(this.getMovementVector(delta))
@@ -59,6 +59,7 @@ AFRAME.registerComponent('oculus-thumbstick-controls', {
     const { data, velocity, tsData } = this
 
     if (tsData.length() === 0) {
+      console.log('No thumbstick data, skipping velocity update')
       return
     }
 
@@ -68,6 +69,7 @@ AFRAME.registerComponent('oculus-thumbstick-controls', {
 
     // Apply damping.
     velocity.multiplyScalar(this.easing)
+    console.log('Velocity updated:', velocity)
   },
 
   getMovementVector(delta) {
@@ -81,6 +83,7 @@ AFRAME.registerComponent('oculus-thumbstick-controls', {
       direction[data.wsAxis] = velocity[data.wsAxis]
     }
 
+    console.log('Movement Vector:', direction)
     return direction
   },
 })
