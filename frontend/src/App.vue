@@ -1,7 +1,7 @@
 <template>
-  <div v-if="!isSceneLoaded" class="flex">Loading...</div>
+  <div v-show="!isSceneLoaded" class="flex">Loading...</div>
 
-  <TestStand v-else></TestStand>
+  <TestStand @loaded="onLoadedScene" v-show="isSceneLoaded"></TestStand>
   <!--  <Storybook v-else></Storybook>-->
 </template>
 
@@ -13,15 +13,11 @@ import Storybook from '@/views/Storybook.vue'
 
 const isSceneLoaded = ref(false)
 
-const onGripDown = (hand: string) => {
-  console.log(hand)
+const onLoadedScene = (val: boolean) => {
+  isSceneLoaded.value = val
 }
 
-onMounted(() => {
-  setTimeout(() => {
-    isSceneLoaded.value = true
-  }, 3000)
-})
+onMounted(() => {})
 </script>
 
 <style scoped></style>

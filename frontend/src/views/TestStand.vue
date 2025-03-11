@@ -5,6 +5,7 @@
     vr-mode-ui="enabled: true"
     embedded
     arjs="sourceType: webcam; debugUIEnabled: true;"
+    @loaded="onLoad"
   >
     <a-assets>
       <!-- Загружаем модель утки -->
@@ -59,6 +60,12 @@
   </a-scene>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const emit = defineEmits(['loaded'])
+
+const onLoad = () => {
+  emit('loaded', true)
+}
+</script>
 
 <style scoped></style>
