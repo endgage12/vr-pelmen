@@ -41,8 +41,8 @@
     <a-box position="0 1 -5" ammo-body="type: dynamic" ammo-shape="type: box"></a-box>
 
     <!-- Игровой риг с камерой и контроллерами -->
-    <a-entity id="rig" oculus-thumbstick-controls>
-      <a-camera id="camera" oculus-thumbstick-controls></a-camera>
+    <a-entity id="rig">
+      <a-camera id="camera"></a-camera>
       <a-entity meta-touch-controls="hand: left; model: true;"></a-entity>
       <a-entity meta-touch-controls="hand: right; model: true;"></a-entity>
     </a-entity>
