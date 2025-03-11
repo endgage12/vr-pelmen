@@ -14,7 +14,7 @@
       ></a-asset-item>
 
       <!-- Загружаем модель AK-74M -->
-      <a-asset-item id="ak74Model" src="/public/ak-74m/scene.gltf"></a-asset-item>
+      <a-asset-item id="ak74Model" src="/ak-74m/scene.gltf"></a-asset-item>
     </a-assets>
 
     <a-gltf-model src="#duckModel" position="0 3 -15" scale="1 1 1" dynamic-body></a-gltf-model>
@@ -53,7 +53,9 @@
         material="color: #ffcccc"
         position="-0.2 1.5 -0.5"
         super-hands="usePhysics: only; constraintComponentName: ammo-constraint"
+        hand-controls="hand: left; handModelStyle: lowPoly; color: #ffcccc"
         raycaster="objects: .interactive"
+        meta-touch-controls="hand: left"
         vive-controls="hand: left"
         oculus-touch-controls="hand: left"
         grabbable
@@ -67,7 +69,9 @@
         material="color: #ffcccc"
         position="0.2 1.5 -0.5"
         super-hands="usePhysics: only; constraintComponentName: ammo-constraint"
+        hand-controls="hand: right; handModelStyle: lowPoly; color: #ffcccc"
         raycaster="objects: .interactive"
+        meta-touch-controls="hand: right"
         vive-controls="hand: right"
         oculus-touch-controls="hand: right"
         grabbable
