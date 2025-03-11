@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bb234792-6862-49b2-8145-698cf6161674" name="Changes" comment="for test purposes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/oculus-thumbstick-controls.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/oculus-thumbstick-controls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/Storybook.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Storybook.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +103,7 @@
       <workItem from="1740747663552" duration="8036000" />
       <workItem from="1741291849630" duration="17283000" />
       <workItem from="1741468312763" duration="599000" />
-      <workItem from="1741552181382" duration="36685000" />
+      <workItem from="1741552181382" duration="36862000" />
     </task>
     <task id="LOCAL-00001" summary="81 port use">
       <option name="closed" value="true" />
@@ -338,7 +337,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741709053205</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1741710509492</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1741710509492</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
