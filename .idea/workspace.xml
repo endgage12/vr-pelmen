@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="bb234792-6862-49b2-8145-698cf6161674" name="Changes" comment="for test purposes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/oculus-thumbstick-controls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/views/Storybook.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Storybook.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/TestStand.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/TestStand.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,63 +111,7 @@
       <workItem from="1741468312763" duration="599000" />
       <workItem from="1741552181382" duration="40264000" />
       <workItem from="1741718453475" duration="289000" />
-      <workItem from="1741800497964" duration="5506000" />
-    </task>
-    <task id="LOCAL-00001" summary="81 port use">
-      <option name="closed" value="true" />
-      <created>1740751548875</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1740751548875</updated>
-    </task>
-    <task id="LOCAL-00002" summary="disable 443">
-      <option name="closed" value="true" />
-      <created>1740752082133</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1740752082133</updated>
-    </task>
-    <task id="LOCAL-00003" summary="test location">
-      <option name="closed" value="true" />
-      <created>1740752755559</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1740752755559</updated>
-    </task>
-    <task id="LOCAL-00004" summary="physics engine ammo added">
-      <option name="closed" value="true" />
-      <created>1740754467925</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1740754467925</updated>
-    </task>
-    <task id="LOCAL-00005" summary="try launch VR">
-      <option name="closed" value="true" />
-      <created>1740755749591</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1740755749591</updated>
-    </task>
-    <task id="LOCAL-00006" summary="gravity physics added">
-      <option name="closed" value="true" />
-      <created>1741292890693</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1741292890693</updated>
-    </task>
-    <task id="LOCAL-00007" summary="ssl cert for https">
-      <option name="closed" value="true" />
-      <created>1741339100499</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1741339100499</updated>
+      <workItem from="1741800497964" duration="9829000" />
     </task>
     <task id="LOCAL-00008" summary="ssl cert for https">
       <option name="closed" value="true" />
@@ -493,7 +441,71 @@
       <option name="project" value="LOCAL" />
       <updated>1741804937745</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1741806020469</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1741806020469</updated>
+    </task>
+    <task id="LOCAL-00050" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1741806203720</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1741806203722</updated>
+    </task>
+    <task id="LOCAL-00051" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1741806256985</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1741806256985</updated>
+    </task>
+    <task id="LOCAL-00052" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1741806605911</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1741806605911</updated>
+    </task>
+    <task id="LOCAL-00053" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1741806668435</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1741806668436</updated>
+    </task>
+    <task id="LOCAL-00054" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1741806791780</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1741806791781</updated>
+    </task>
+    <task id="LOCAL-00055" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1741806865865</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1741806865865</updated>
+    </task>
+    <task id="LOCAL-00056" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1741808884542</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1741808884542</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

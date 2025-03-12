@@ -37,18 +37,30 @@
       grabbable
     ></a-box>
 
+    <a-box
+      hoverable
+      grabbable
+      stretchable
+      draggable
+      droppable
+      color="blue"
+      position="0 0 -1"
+    ></a-box>
+
     <a-entity ref="rig" id="rig" position="0 0 0" rotation="0 0 0">
       <a-entity camera wasd-control look-controls position="0 1.65 0"></a-entity>
 
-      <a-entity
-        @thumbstickmoved="onThumbstickMoved"
-        meta-touch-controls="hand: left; model: true;"
-      ></a-entity>
+      <a-entity sphere-collider="objects: a-box" super-hands hand-controls="hand: left"></a-entity>
+      <a-entity sphere-collider="objects: a-box" super-hands hand-controls="hand: right"></a-entity>
+      <!--      <a-entity-->
+      <!--        @thumbstickmoved="onThumbstickMoved"-->
+      <!--        meta-touch-controls="hand: left; model: true;"-->
+      <!--      ></a-entity>-->
 
-      <a-entity
-        @thumbstickmoved="onThumbstickRotation"
-        meta-touch-controls="hand: right; model: true;"
-      ></a-entity>
+      <!--      <a-entity-->
+      <!--        @thumbstickmoved="onThumbstickRotation"-->
+      <!--        meta-touch-controls="hand: right; model: true;"-->
+      <!--      ></a-entity>-->
     </a-entity>
   </a-scene>
 </template>

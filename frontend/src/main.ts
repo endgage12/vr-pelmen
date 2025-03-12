@@ -3,8 +3,8 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
-import 'aframe'
-import '../src/components/oculus-thumbstick-controls.js'
+// import 'aframe'
+// import 'super-hands'
 
 import App from './App.vue'
 import router from './router'

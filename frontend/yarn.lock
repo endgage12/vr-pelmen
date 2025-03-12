@@ -3168,6 +3168,11 @@ super-animejs@^3.1.0:
   resolved "https://registry.yarnpkg.com/super-animejs/-/super-animejs-3.1.0.tgz#59435946faafe880710e348cf24ad3126e45aed1"
   integrity sha512-6MFAFJDRuvwkovxQZPruuyHinTa4rgj4hNLOndjcYYhZLckoXtVRY9rJPuq8p6c/tgZJrFYEAYAfJ2/hhNtUCA==
 
+super-hands@^3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/super-hands/-/super-hands-3.0.5.tgz#718bf87657a57a0b7e1d35339183b0dbfb8a3fb8"
+  integrity sha512-jMNlagbDLAapk4hkeCI6kgbX8huid/AFXFI+aq3NmSozFnAizP52mCwNBQeiWwTE1iF7uZ0hT5VHAvRfqgcKkg==
+
 superjson@^2.2.1:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/superjson/-/superjson-2.2.2.tgz#9d52bf0bf6b5751a3c3472f1292e714782ba3173"

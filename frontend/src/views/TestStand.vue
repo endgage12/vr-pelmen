@@ -45,14 +45,8 @@
     <!-- Игровой риг с камерой и контроллерами -->
     <a-entity id="rig">
       <a-camera id="camera"></a-camera>
-      <a-entity
-        meta-touch-controls="hand: left; model: true;"
-        oculus-thumbstick-controls
-      ></a-entity>
-      <a-entity
-        meta-touch-controls="hand: right; model: true;"
-        oculus-thumbstick-controls
-      ></a-entity>
+      <a-entity meta-touch-controls="hand: left; model: true;"></a-entity>
+      <a-entity meta-touch-controls="hand: right; model: true;"></a-entity>
     </a-entity>
 
     <!-- Ваши 3D-объекты -->
