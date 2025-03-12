@@ -56,7 +56,7 @@ const onThumbstickMoved = (e: any) => {
   const vectorY = e.detail.y
 
   const prevPosition = rig.value.getAttribute('position')
-  const nextPosition = `${vectorX} ${vectorY} ${prevPosition.z}`
+  const nextPosition = `${vectorX + prevPosition.x} ${vectorY + prevPosition.y} ${prevPosition.z}`
   rig.value.setAttribute('position', nextPosition)
 }
 </script>

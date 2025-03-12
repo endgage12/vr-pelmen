@@ -51,7 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "dev",
-    "last_opened_file_path": "/home/alexandr/projects/vr/pelmen/nginx",
+    "last_opened_file_path": "/home/alexandr/projects/vr/pelmen",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -103,7 +103,9 @@
       <workItem from="1740747663552" duration="8036000" />
       <workItem from="1741291849630" duration="17283000" />
       <workItem from="1741468312763" duration="599000" />
-      <workItem from="1741552181382" duration="37711000" />
+      <workItem from="1741552181382" duration="40264000" />
+      <workItem from="1741718453475" duration="289000" />
+      <workItem from="1741800497964" duration="528000" />
     </task>
     <task id="LOCAL-00001" summary="81 port use">
       <option name="closed" value="true" />
@@ -377,7 +379,31 @@
       <option name="project" value="LOCAL" />
       <updated>1741711082314</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1741711542836</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1741711542836</updated>
+    </task>
+    <task id="LOCAL-00036" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1741712017290</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1741712017290</updated>
+    </task>
+    <task id="LOCAL-00037" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1741713723621</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1741713723621</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
