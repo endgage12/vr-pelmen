@@ -160,7 +160,7 @@ watch(minivanModel, () => {
 
   // Добавляем созданный элемент в сцену
   sceneRef.value.appendChild(minivanModelWrapper)
-  console.log(minivanModelWrapper.value)
+  console.log(minivanModel.value)
 })
 </script>
 
