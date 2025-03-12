@@ -1,7 +1,7 @@
 <template>
-  <a-scene @loaded="onLoad" stats>
-    <a-assets>
-      <a-assets-item id="carModel" src="/public/porsche/scene.gltf"></a-assets-item>
+  <a-scene ref="sceneRef" @loaded="onLoad" stats>
+    <a-assets timeout="30000" @loaded="onAssetsLoaded">
+      <a-assets-item ref="carModel" id="carModel" src="/public/porsche/scene.gltf"></a-assets-item>
     </a-assets>
 
     <a-sky color="#87CEEB"></a-sky>
@@ -29,14 +29,6 @@
       value="Hi"
       geometry="primitive:plane"
     ></a-text>
-
-    <a-entity
-      position="-3 0 -5"
-      gltf-model="#carModel"
-      modify-materials
-      dynamic-body
-      grabbable
-    ></a-entity>
 
     <a-box
       position="0 1 -5"
@@ -88,16 +80,23 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import * as THREE from 'three'
 
 const emit = defineEmits(['loaded'])
 
 const vrLogger = ref()
 const rig = ref()
+const carModel = ref()
+const sceneRef = ref()
 
 const onLoad = () => {
   emit('loaded', true)
+}
+
+const onAssetsLoaded = () => {
+  console.log('assets loaded')
+  vrLogger.value.setAttribute('value', 'assets loaded')
 }
 
 const onThumbstickRotation = (e: any) => {
@@ -127,6 +126,21 @@ const onThumbstickMoved = (e: any) => {
 
   rig.value.object3D.position.add(forwardMovement).add(sidewaysMovement)
 }
+
+watch(carModel, () => {
+  if (!carModel.value) return
+
+  // Создаем новый элемент a-entity
+  const carModelWrapper = document.createElement('a-entity')
+  carModelWrapper.setAttribute('position', '-3 0 -5')
+  carModelWrapper.setAttribute('gltf-model', '#carModel')
+  carModelWrapper.setAttribute('dynamic-body', '')
+  carModelWrapper.setAttribute('grabbable', '')
+
+  // Добавляем созданный элемент в сцену
+  sceneRef.value.appendChild(carModelWrapper)
+  console.log(carModel.value)
+})
 </script>
 
 <style scoped></style>

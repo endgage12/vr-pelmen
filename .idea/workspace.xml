@@ -5,36 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb234792-6862-49b2-8145-698cf6161674" name="Changes" comment="for test purposes">
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/license.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/scene.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/scene.gltf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/930_chromes_baseColor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/930_chromes_metallicRoughness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/930_lights_baseColor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/930_lights_metallicRoughness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/930_lights_normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/930_plastics_baseColor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/930_plastics_metallicRoughness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/930_rim_baseColor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/930_rim_metallicRoughness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/930_rim_normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/930_stickers_baseColor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/930_tire_baseColor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/930_tire_metallicRoughness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/930_tire_normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/930_wunderbaum_baseColor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/930_wunderbaum_metallicRoughness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/coat_baseColor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/coat_metallicRoughness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/glass_baseColor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/glass_metallicRoughness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/material_0_baseColor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/paint_clearcoat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/paint_clearcoat_normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/paint_clearcoat_roughness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/paint_metallicRoughness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/plate_baseColor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/porsche/textures/plate_normal.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/views/Storybook.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Storybook.vue" afterDir="false" />
     </list>
@@ -137,15 +107,7 @@
       <workItem from="1741468312763" duration="599000" />
       <workItem from="1741552181382" duration="40264000" />
       <workItem from="1741718453475" duration="289000" />
-      <workItem from="1741800497964" duration="13617000" />
-    </task>
-    <task id="LOCAL-00010" summary="ssl cert for https">
-      <option name="closed" value="true" />
-      <created>1741689344327</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1741689344327</updated>
+      <workItem from="1741800497964" duration="15178000" />
     </task>
     <task id="LOCAL-00011" summary="ssl cert for https">
       <option name="closed" value="true" />
@@ -531,7 +493,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741810913063</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1741815517012</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1741815517012</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
