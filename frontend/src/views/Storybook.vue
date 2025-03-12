@@ -18,10 +18,10 @@
         meta-touch-controls="hand: left; model: true;"
       ></a-entity>
 
-      <!--      <a-entity-->
-      <!--        @thumbstickmoved="onThumbstickRotation"-->
-      <!--        meta-touch-controls="hand: right; model: true;"-->
-      <!--      ></a-entity>-->
+      <a-entity
+        @thumbstickmoved="onThumbstickRotation"
+        meta-touch-controls="hand: right; model: true;"
+      ></a-entity>
     </a-entity>
   </a-scene>
 </template>
@@ -50,25 +50,24 @@ const onAxisMove = (e: any) => {
   vrLogger.value.setAttribute('value', JSON.stringify(e.detail))
 }
 
-// const onThumbstickRotation = (e: any) => {
-//   vrLogger.value.setAttribute('value', JSON.stringify(e.detail))
-//   const vectorX = e.detail.x
-//   const vectorZ = e.detail.z
-//
-//   const prevRotation = rig.value.getAttribute('rotation')
-//   const nextRotation = `${vectorX + prevRotation.x} ${prevRotation.y} ${vectorZ + prevRotation.z}`
-//   rig.value.setAttribute('rotation', nextRotation)
-// }
+const onThumbstickRotation = (e: any) => {
+  vrLogger.value.setAttribute('value', JSON.stringify(e.detail))
+  const vectorX = e.detail.x
+  const vectorZ = e.detail.y
+
+  const prevRotation = rig.value.getAttribute('rotation')
+  const nextRotation = `${vectorX + prevRotation.x} ${prevRotation.y} ${vectorZ + prevRotation.z}`
+  rig.value.setAttribute('rotation', nextRotation)
+}
 
 const onThumbstickMoved = (e: any) => {
-  vrLogger.value.setAttribute('value', JSON.stringify(e))
-  // const vectorX = e.detail.x
-  // const vectorZ = e.detail.z
-  // console.log(e)
-  //
-  // const prevPosition = rig.value.getAttribute('position')
-  // const nextPosition = `${vectorX + prevPosition.x} ${prevPosition.y} ${vectorZ + prevPosition.z}`
-  // rig.value.setAttribute('position', nextPosition)
+  vrLogger.value.setAttribute('value', JSON.stringify(e.detail))
+  const vectorX = e.detail.x
+  const vectorZ = e.detail.y
+
+  const prevPosition = rig.value.getAttribute('position')
+  const nextPosition = `${vectorX + prevPosition.x} ${prevPosition.y} ${vectorZ + prevPosition.z}`
+  rig.value.setAttribute('position', nextPosition)
 }
 </script>
 
