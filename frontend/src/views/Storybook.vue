@@ -38,6 +38,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import * as THREE from 'three'
 
 const emit = defineEmits(['loaded'])
 
@@ -69,14 +70,34 @@ const onThumbstickRotation = (e: any) => {
   rig.value.setAttribute('rotation', nextRotation)
 }
 
-const onThumbstickMoved = (e: any) => {
-  vrLogger.value.setAttribute('value', JSON.stringify(e.detail))
-  const vectorX = e.detail.x / 10
-  const vectorZ = e.detail.y / 10
+// const onThumbstickMoved = (e: any) => {
+//   vrLogger.value.setAttribute('value', JSON.stringify(e.detail))
+//   const vectorX = e.detail.x / 10
+//   const vectorZ = e.detail.y / 10
+//
+//   const prevPosition = rig.value.getAttribute('position')
+//   const nextPosition = `${vectorX + prevPosition.x} ${prevPosition.y} ${vectorZ + prevPosition.z}`
+//   rig.value.setAttribute('position', nextPosition)
+// }
 
-  const prevPosition = rig.value.getAttribute('position')
-  const nextPosition = `${vectorX + prevPosition.x} ${prevPosition.y} ${vectorZ + prevPosition.z}`
-  rig.value.setAttribute('position', nextPosition)
+const onThumbstickMoved = (e: any) => {
+  const movementSpeed = 0.1
+
+  // Получаем ссылку на камеру внутри rig
+  const cameraEl = rig.value.querySelector('[camera]')
+  const direction = new THREE.Vector3()
+  cameraEl.object3D.getWorldDirection(direction)
+
+  // Определяем вектор "вправо" через векторное произведение (на основе направления и вектора вверх)
+  const up = new THREE.Vector3(0, 1, 0)
+  const right = new THREE.Vector3().crossVectors(direction, up).normalize()
+
+  // Вычисляем смещение для движения вперед/назад и в стороны
+  const forwardMovement = direction.clone().multiplyScalar(e.detail.y * movementSpeed)
+  const sidewaysMovement = right.clone().multiplyScalar(e.detail.x * movementSpeed)
+
+  // Обновляем позицию rig
+  rig.value.object3D.position.add(forwardMovement).add(sidewaysMovement)
 }
 </script>
 
