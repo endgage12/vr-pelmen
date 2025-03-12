@@ -61,8 +61,8 @@ const onThumbstickRotation = (e: any) => {
 
 const onThumbstickMoved = (e: any) => {
   vrLogger.value.setAttribute('value', JSON.stringify(e.detail))
-  const vectorX = e.detail.x / 10
-  const vectorZ = e.detail.y / 10
+  const vectorX = -e.detail.x / 10
+  const vectorZ = -e.detail.y / 10
 
   const prevPosition = rig.value.getAttribute('position')
   const nextPosition = `${vectorX + prevPosition.x} ${prevPosition.y} ${vectorZ + prevPosition.z}`
