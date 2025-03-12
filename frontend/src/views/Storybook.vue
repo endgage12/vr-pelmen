@@ -10,7 +10,7 @@
       geometry="primitive:plane"
     ></a-text>
 
-    <a-entity ref="rig" id="rig" position="0 0 0">
+    <a-entity ref="rig" id="rig" position="0 0 0" rotation="0 45 0">
       <a-entity camera wasd-control look-controls position="0 1.65 0"></a-entity>
 
       <a-entity
@@ -19,7 +19,7 @@
       ></a-entity>
 
       <a-entity
-        @thumbstickmoved="onThumbstickMoved"
+        @thumbstickmoved="onThumbstickRotation"
         meta-touch-controls="hand: right; model: true;"
       ></a-entity>
     </a-entity>
@@ -48,6 +48,16 @@ const onControllerDisconnected = () => {
 
 const onAxisMove = (e: any) => {
   vrLogger.value.setAttribute('value', JSON.stringify(e.detail))
+}
+
+const onThumbstickRotation = (e: any) => {
+  vrLogger.value.setAttribute('value', JSON.stringify(e.detail))
+  const vectorX = e.detail.x
+  const vectorY = e.detail.y
+
+  const prevRotation = rig.value.getAttribute('rotation')
+  const nextRotation = `${vectorX + prevRotation.x} ${vectorY + prevRotation.y} ${prevRotation.z}`
+  rig.value.setAttribute('rotation', nextRotation)
 }
 
 const onThumbstickMoved = (e: any) => {
