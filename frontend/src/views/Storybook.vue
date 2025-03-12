@@ -70,7 +70,7 @@ const onThumbstickRotation = (e: any) => {
   rig.value.setAttribute('rotation', nextRotation)
 }
 
-const onThumbstickMoved = (e) => {
+const onThumbstickMoved = (e: any) => {
   const movementSpeed = 0.1
 
   // Получаем камеру внутри rig
