@@ -88,7 +88,7 @@ const onThumbstickMoved = (e: any) => {
 
   // Вычисляем смещения
   const forwardMovement = direction.clone().multiplyScalar(e.detail.y * movementSpeed)
-  const sidewaysMovement = right.clone().multiplyScalar(e.detail.x * movementSpeed)
+  const sidewaysMovement = right.clone().multiplyScalar(-e.detail.x * movementSpeed)
 
   // Обновляем позицию rig
   rig.value.object3D.position.add(forwardMovement).add(sidewaysMovement)
