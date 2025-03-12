@@ -1,5 +1,9 @@
 <template>
-  <a-scene @loaded="onLoad">
+  <a-scene @loaded="onLoad" stats>
+    <a-assets>
+      <a-assets-item id="carModel" src="/public/porsche/scene.gltf"></a-assets-item>
+    </a-assets>
+
     <a-sky color="#87CEEB"></a-sky>
     <a-plane
       rotation="-90 0 0"
@@ -25,6 +29,14 @@
       value="Hi"
       geometry="primitive:plane"
     ></a-text>
+
+    <a-entity
+      position="-3 0 -5"
+      gltf-model="#carModel"
+      modify-materials
+      dynamic-body
+      grabbable
+    ></a-entity>
 
     <a-box
       position="0 1 -5"
