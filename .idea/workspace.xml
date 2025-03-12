@@ -5,6 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb234792-6862-49b2-8145-698cf6161674" name="Changes" comment="for test purposes">
+      <change afterPath="$PROJECT_DIR$/frontend/public/minivan/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/minivan/scene.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/minivan/scene.gltf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/minivan/textures/GENERIC_BADGES_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/minivan/textures/GENERIC_BADGES_specularf0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/minivan/textures/Material_31_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/minivan/textures/Material_31_metallicRoughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/minivan/textures/Material_31_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/minivan/textures/Numberplates_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/minivan/textures/RIMSTOCK_01_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/minivan/textures/RIMSTOCK_01_metallicRoughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/minivan/textures/RIMSTOCK_01_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/minivan/textures/SHVAN95_HEADLIGHTS_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/minivan/textures/UCB_BOTTOM_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/minivan/textures/UCB_BOTTOM_metallicRoughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/minivan/textures/UCB_BOTTOM_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/minivan/textures/UCB_GLASS_CLEAN_baseColor.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/views/Storybook.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Storybook.vue" afterDir="false" />
     </list>
@@ -107,15 +124,7 @@
       <workItem from="1741468312763" duration="599000" />
       <workItem from="1741552181382" duration="40264000" />
       <workItem from="1741718453475" duration="289000" />
-      <workItem from="1741800497964" duration="15178000" />
-    </task>
-    <task id="LOCAL-00011" summary="ssl cert for https">
-      <option name="closed" value="true" />
-      <created>1741689351161</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1741689351161</updated>
+      <workItem from="1741800497964" duration="15845000" />
     </task>
     <task id="LOCAL-00012" summary="ssl cert for https">
       <option name="closed" value="true" />
@@ -501,7 +510,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741815517012</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1741816923676</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1741816923676</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

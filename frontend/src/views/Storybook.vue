@@ -2,6 +2,11 @@
   <a-scene ref="sceneRef" @loaded="onLoad" stats>
     <a-assets timeout="30000" @loaded="onAssetsLoaded">
       <a-assets-item ref="carModel" id="carModel" src="/public/porsche/scene.gltf"></a-assets-item>
+      <a-assets-item
+        ref="minivanModel"
+        id="minivanModel"
+        src="/public/minivan/scene.gltf"
+      ></a-assets-item>
     </a-assets>
 
     <a-sky color="#87CEEB"></a-sky>
@@ -88,6 +93,7 @@ const emit = defineEmits(['loaded'])
 const vrLogger = ref()
 const rig = ref()
 const carModel = ref()
+const minivanModel = ref()
 const sceneRef = ref()
 
 const onLoad = () => {
@@ -140,6 +146,21 @@ watch(carModel, () => {
   // Добавляем созданный элемент в сцену
   sceneRef.value.appendChild(carModelWrapper)
   console.log(carModel.value)
+})
+
+watch(minivanModel, () => {
+  if (!minivanModel.value) return
+
+  // Создаем новый элемент a-entity
+  const minivanModelWrapper = document.createElement('a-entity')
+  minivanModelWrapper.setAttribute('position', '-7 0 -5')
+  minivanModelWrapper.setAttribute('gltf-model', '#minivanModel')
+  minivanModelWrapper.setAttribute('dynamic-body', '')
+  minivanModelWrapper.setAttribute('grabbable', '')
+
+  // Добавляем созданный элемент в сцену
+  sceneRef.value.appendChild(minivanModelWrapper)
+  console.log(minivanModelWrapper.value)
 })
 </script>
 
