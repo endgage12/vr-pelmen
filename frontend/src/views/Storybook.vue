@@ -10,6 +10,16 @@
       geometry="primitive:plane"
     ></a-text>
 
+    <a-box
+      position="0 3 -5"
+      depth="1"
+      height="1"
+      width="1"
+      color="#EF2D5E"
+      dynamic-body
+      grabbable
+    ></a-box>
+
     <a-entity ref="rig" id="rig" position="0 0 0" rotation="0 0 0">
       <a-entity camera wasd-control look-controls position="0 1.65 0"></a-entity>
 
