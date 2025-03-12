@@ -53,10 +53,9 @@ const onAxisMove = (e: any) => {
 const onThumbstickRotation = (e: any) => {
   vrLogger.value.setAttribute('value', JSON.stringify(e.detail))
   const vectorX = e.detail.x
-  const vectorZ = e.detail.y
 
   const prevRotation = rig.value.getAttribute('rotation')
-  const nextRotation = `${vectorX + prevRotation.x} ${prevRotation.y} ${vectorZ + prevRotation.z}`
+  const nextRotation = `${prevRotation.x} ${vectorX + prevRotation.y} ${prevRotation.z}`
   rig.value.setAttribute('rotation', nextRotation)
 }
 
