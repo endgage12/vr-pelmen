@@ -1,7 +1,23 @@
 <template>
   <a-scene @loaded="onLoad">
     <a-sky color="#87CEEB"></a-sky>
-    <a-plane rotation="-90 0 0" width="50" height="50" color="#7BC8A4" static-body></a-plane>
+    <a-plane
+      rotation="-90 0 0"
+      width="50"
+      height="50"
+      color="#7BC8A4"
+      static-body
+      src="https://upload.wikimedia.org/wikipedia/commons/6/68/Callisto_terrain.jpg"
+    ></a-plane>
+    <a-plane
+      position="50 0 -50"
+      rotation="-90 0 0"
+      width="500"
+      height="50"
+      color="#7BC8A4"
+      static-body
+      src="https://cdn.polyhaven.com/asset_img/primary/rocky_terrain_02.png?height=760"
+    ></a-plane>
     <a-text
       ref="vrLogger"
       id="vrLogger"
@@ -16,6 +32,7 @@
       height="1"
       width="1"
       color="#EF2D5E"
+      animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"
       dynamic-body
       grabbable
     ></a-box>
@@ -47,18 +64,6 @@ const rig = ref()
 
 const onLoad = () => {
   emit('loaded', true)
-}
-
-const onControllerConnected = () => {
-  vrLogger.value.setAttribute('value', 'Controller connected')
-}
-
-const onControllerDisconnected = () => {
-  vrLogger.value.setAttribute('value', 'Controller disconnected')
-}
-
-const onAxisMove = (e: any) => {
-  vrLogger.value.setAttribute('value', JSON.stringify(e.detail))
 }
 
 const onThumbstickRotation = (e: any) => {
