@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb234792-6862-49b2-8145-698cf6161674" name="Changes" comment="for test purposes">
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/Storybook.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Storybook.vue" afterDir="false" />
-    </list>
+    <list default="true" id="bb234792-6862-49b2-8145-698cf6161674" name="Changes" comment="for test purposes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,15 +104,7 @@
       <workItem from="1741468312763" duration="599000" />
       <workItem from="1741552181382" duration="40264000" />
       <workItem from="1741718453475" duration="289000" />
-      <workItem from="1741800497964" duration="15872000" />
-    </task>
-    <task id="LOCAL-00013" summary="for test purposes">
-      <option name="closed" value="true" />
-      <created>1741692710295</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1741692710295</updated>
+      <workItem from="1741800497964" duration="16239000" />
     </task>
     <task id="LOCAL-00014" summary="for test purposes">
       <option name="closed" value="true" />
@@ -500,7 +490,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741817581844</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1741817599347</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1741817599347</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

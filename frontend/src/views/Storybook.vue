@@ -1,6 +1,6 @@
 <template>
   <a-scene ref="sceneRef" @loaded="onLoad" stats>
-    <a-assets timeout="30000" @loaded="onAssetsLoaded">
+    <a-assets timeout="300000" @loaded="onAssetsLoaded">
       <a-assets-item ref="carModel" id="carModel" src="/public/porsche/scene.gltf"></a-assets-item>
       <a-assets-item
         ref="minivanModel"
