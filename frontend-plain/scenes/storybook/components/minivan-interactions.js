@@ -78,23 +78,44 @@ AFRAME.registerComponent('door-toggle', {
 AFRAME.registerComponent('shooting', {
     init: function () {
         this.el.addEventListener('triggerdown', () => {
-            // Создание элемента пули
+            // Создаем элемент пули
             const bullet = document.createElement('a-sphere');
-            const handPos = this.el.getAttribute('position');
-            bullet.setAttribute('position', handPos);
             bullet.setAttribute('radius', '0.05');
             bullet.setAttribute('color', '#EF2D5E');
-            // Применяем физику с помощью physx (динамическое тело)
             bullet.setAttribute('physx-body', 'type: dynamic; mass: 0.1');
+
+            // Получаем мировую позицию руки
+            const handWorldPos = new THREE.Vector3();
+            this.el.object3D.getWorldPosition(handWorldPos);
+            bullet.setAttribute('position', handWorldPos);
 
             // Добавляем пулю в сцену
             this.el.sceneEl.appendChild(bullet);
 
-            // Здесь можно добавить код для применения импульса
-            // (например, через API physx, чтобы пуля летела вперёд)
-            // Псевдокод:
-            // const impulse = { x: 0, y: 0, z: -10 };
-            // bullet.body.applyImpulse(impulse, bullet.body.getPosition());
+            // Получаем направление выстрела из руки
+            const direction = new THREE.Vector3();
+            this.el.object3D.getWorldDirection(direction);
+
+            // Определяем силу выстрела (настройте по своему усмотрению)
+            const force = 10; // сила импульса
+
+            // Рассчитываем импульс как вектор
+            const impulse = {
+                x: direction.x * force,
+                y: direction.y * force,
+                z: direction.z * force
+            };
+
+            // Применяем импульс с небольшой задержкой, чтобы убедиться,
+            // что физическое тело пули полностью инициализировано
+            setTimeout(() => {
+                if (bullet.body && typeof bullet.body.applyImpulse === 'function') {
+                    // Применяем импульс в позиции пули
+                    bullet.body.applyImpulse(impulse, bullet.body.getPosition());
+                } else {
+                    console.warn('Физическое тело пули не найдено или API изменился.');
+                }
+            }, 50);
         });
     }
 });
