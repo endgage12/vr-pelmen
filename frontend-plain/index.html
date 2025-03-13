@@ -15,6 +15,7 @@
     <script src="https://cdn.jsdelivr.net/gh/MozillaReality/ammo.js@8bbc0ea/builds/ammo.wasm.js"></script>
 </head>
 <body>
+
 <a-scene id="sceneRef" stats>
     <a-assets timeout="300000">
 <!--        <a-asset-item ref="carModel" id="carModel" src="assets/porsche/scene.gltf"></a-asset-item>-->
@@ -22,7 +23,7 @@
 <!--        <a-asset-item id="nissanModel" src="assets/nissan/nissan.glb"></a-asset-item>-->
     </a-assets>
 
-    <a-entity position="-5 0 -5" gltf-model="#minivanModel" dynamic-body></a-entity>
+    <a-entity position="-5 0 -5" gltf-model="#minivanModel" dynamic-body find-door door-toggle></a-entity>
 <!--    <a-entity position="5 0 -5" gltf-model="#carModel" dynamic-body></a-entity>-->
 <!--    <a-entity position="-10 0 -30" gltf-model="#nissanModel" dynamic-body></a-entity>-->
 
@@ -91,6 +92,7 @@
     </a-entity>
 </a-scene>
 
-<script src="scenes/storybook/components/main.js"></script>
+<script src="scenes/storybook/main.js"></script>
+<script src="scenes/storybook/components/minivan-interactions.js"></script>
 </body>
 </html>
