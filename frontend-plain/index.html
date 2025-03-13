@@ -26,10 +26,11 @@
         <a-asset-item id="carWheel" src="assets/wheel/scene.gltf"></a-asset-item>
     </a-assets>
 
-    <a-entity width="5" height="5" position="-5 0 -5" gltf-model="#minivanModel" dynamic-body hoverable grabbable find-door></a-entity>
+    <a-entity width="5" height="5" position="-5 0 -5" gltf-model="#minivanModel" hoverable grabbable find-door></a-entity>
     <a-entity position="-1 -1.65 -1.5" gltf-model="#carWheel"></a-entity>
-<!--    <a-entity position="5 0 -5" gltf-model="#carModel" dynamic-body></a-entity>-->
-<!--    <a-entity position="-10 0 -30" gltf-model="#nissanModel" dynamic-body></a-entity>-->
+    <a-circle position="1 1.25 -1" color="pink" radius="0.45" obb-collider="showColliders: true" grabbable></a-circle>
+<!--    <a-entity position="5 0 -5" gltf-model="#carModel"></a-entity>-->
+<!--    <a-entity position="-10 0 -30" gltf-model="#nissanModel"></a-entity>-->
 
     <a-sky color="#87CEEB"></a-sky>
     <a-plane
@@ -37,7 +38,6 @@
             width="50"
             height="50"
             color="#7BC8A4"
-            static-body
             src="https://upload.wikimedia.org/wikipedia/commons/6/68/Callisto_terrain.jpg"
     ></a-plane>
     <a-plane
@@ -46,7 +46,6 @@
             width="500"
             height="50"
             color="#7BC8A4"
-            static-body
             src="https://cdn.polyhaven.com/asset_img/primary/rocky_terrain_02.png?height=760"
     ></a-plane>
     <a-text
@@ -58,17 +57,18 @@
     ></a-text>
 
     <a-box
+            obb-collider="showColliders: true"
             position="0 1 -5"
             depth="1"
             height="1"
             width="1"
             color="#EF2D5E"
             animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"
-            dynamic-body
             grabbable
     ></a-box>
 
     <a-box
+            obb-collider="showColliders: true"
             hoverable
             grabbable
             stretchable
