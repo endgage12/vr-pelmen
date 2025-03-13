@@ -25,7 +25,9 @@ AFRAME.registerComponent('find-door', {
             }
 
             console.log(doorModel);
-            doorModel.setAttribute('door-toggle', '')
+            doorModel.addEventListener('grab-start', () => {
+                doorModel.visible = false;
+            });
             // Создаем новый элемент и добавляем найденную дверь
             // const doorEl = document.createElement('a-entity');
             // doorEl.setObject3D('mesh', doorModel);
