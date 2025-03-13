@@ -44,4 +44,44 @@ sceneRef.addEventListener('loaded', () => {
     rightHand.addEventListener('thumbstickmoved', (e) => {
         onThumbstickRotation(e)
     })
+
+    leftHand.addEventListener('gripdown', (e) => {
+        vrLogger.setAttribute('value', JSON.stringify(e.detail))
+        
+        const intersectedEntities = [];
+        const handPosition = new THREE.Vector3();
+        leftHand.object3D.getWorldPosition(handPosition);
+
+        sceneRef.querySelectorAll('[id]').forEach((entity) => {
+            if (entity.id === 'leftHand' || entity.id === 'rightHand') return;
+
+            const entityPosition = new THREE.Vector3();
+            entity.object3D.getWorldPosition(entityPosition);
+
+            const distance = handPosition.distanceTo(entityPosition);
+            const collisionThreshold = 0.5;
+
+            if (distance <= collisionThreshold) {
+                intersectedEntities.push(entity);
+            }
+        });
+
+        if (intersectedEntities.length > 0) {
+            vrLogger.setAttribute('value', `Intersected with: ${intersectedEntities.map(e => e.id).join(', ')}`);
+        } else {
+            vrLogger.setAttribute('value', 'No intersection detected');
+        }
+    })
+
+    rightHand.addEventListener('gripdown', (e) => {
+        vrLogger.setAttribute('value', JSON.stringify(e.detail))
+    })
+
+    leftHand.addEventListener('triggerup', (e) => {
+        vrLogger.setAttribute('value', JSON.stringify(e.detail))
+    })
+
+    rightHand.addEventListener('triggerup', (e) => {
+        vrLogger.setAttribute('value', JSON.stringify(e.detail))
+    })
 })
