@@ -7,12 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/handy-work/build/handy-controls.min.js"></script>
-<!--    <script>-->
-<!--        delete AFRAME.components["grabbable"];-->
-<!--    </script>-->
+    <script>
+        delete AFRAME.components["grabbable"];
+    </script>
     <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.5.x/dist/aframe-extras.min.js"></script>
-<!--    <script src="https://unpkg.com/super-hands@^3.0.5/dist/super-hands.min.js"></script>-->
+    <script src="https://unpkg.com/super-hands@^3.0.5/dist/super-hands.min.js"></script>
     <script src="https://unpkg.com/@tweenjs/tween.js@^23.1.3/dist/tween.umd.js"></script>
     <script src="https://unpkg.com/aframe-physics-extras/dist/aframe-physics-extras.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/MozillaReality/ammo.js@8bbc0ea/builds/ammo.wasm.js"></script>
@@ -20,130 +19,88 @@
 <body>
 
 <a-scene id="sceneRef" stats physics="debug: true; gravity: -10;">
-    <a-entity handy-controls="right:#right-gltf;materialOverride:right;" material="color:gold;metalness:1;roughness:0;">
+    <a-assets timeout="300000">
+<!--        <a-asset-item ref="carModel" id="carModel" src="assets/porsche/scene.gltf"></a-asset-item>-->
+        <a-asset-item ref="minivanModel" id="minivanModel" src="assets/minivan/scene.gltf"></a-asset-item>
+<!--        <a-asset-item id="nissanModel" src="assets/nissan/nissan.glb"></a-asset-item>-->
+        <a-asset-item id="carWheel" src="assets/wheel/scene.gltf"></a-asset-item>
+    </a-assets>
 
-        <!-- Screen space inputs like mobile AR -->
-        <a-torus radius="0.008" radius-tubular="0.001" material="shader:flat;color:blue" data-none="screen-0"></a-torus>
-        <a-torus radius="0.008" radius-tubular="0.001" material="shader:flat;color:green" data-none="screen-1"></a-torus>
-        <a-torus radius="0.008" radius-tubular="0.001" material="shader:flat;color:red" data-none="screen-2"></a-torus>
+    <a-entity width="5" height="5" position="-5 0 -5" gltf-model="#minivanModel" dynamic-body hoverable grabbable find-door></a-entity>
+    <a-entity position="-1 -1.65 -1.5" gltf-model="#carWheel"></a-entity>
+<!--    <a-entity position="5 0 -5" gltf-model="#carModel" dynamic-body></a-entity>-->
+<!--    <a-entity position="-10 0 -30" gltf-model="#nissanModel" dynamic-body></a-entity>-->
 
-        <!-- Objects attached to tracked hand joints -->
-        <a-gltf-model src="#watch-gltf" data-left="wrist" position="-1000 0 0">
-            <a-sphere radius="0.02" position="0 0.02 0" sphere-collider="radius:0.02;objects:[data-right$=-tip];" exit-on="hitend" visible="false"></a-sphere>
-        </a-gltf-model>
-        <a-entity data-left="ring-finger-phalanx-proximal">
-            <a-torus position="0 0 -0.03" radius="0.008" radius-tubular="0.001" scale="1 1 1.5" material="color:gold;metalness:1;roughness:0;"></a-torus>
-        </a-entity>
+    <a-sky color="#87CEEB"></a-sky>
+    <a-plane
+            rotation="-90 0 0"
+            width="50"
+            height="50"
+            color="#7BC8A4"
+            static-body
+            src="https://upload.wikimedia.org/wikipedia/commons/6/68/Callisto_terrain.jpg"
+    ></a-plane>
+    <a-plane
+            position="50 0 -50"
+            rotation="-90 0 0"
+            width="500"
+            height="50"
+            color="#7BC8A4"
+            static-body
+            src="https://cdn.polyhaven.com/asset_img/primary/rocky_terrain_02.png?height=760"
+    ></a-plane>
+    <a-text
+            ref="vrLogger"
+            id="vrLogger"
+            position="0 2 -10"
+            value="Hi"
+            geometry="primitive:plane"
+    ></a-text>
 
-        <a-entity data-right="index-finger-tip" mixin="blink" blink-controls="rotateOnTeleport:false;startEvents:pose_point_fuseShort;endEvents:pose_point_fuseLong;"></a-entity>
-        <a-entity data-left="index-finger-tip"  mixin="blink" blink-controls="rotateOnTeleport:false;startEvents:pose_point_fuseShort;endEvents:pose_point_fuseLong;"></a-entity>
+    <a-box
+            position="0 1 -5"
+            depth="1"
+            height="1"
+            width="1"
+            color="#EF2D5E"
+            animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"
+            dynamic-body
+            grabbable
+    ></a-box>
 
-        <!-- Ray and Grip are Available on Hands or Tracked Inputs -->
-        <a-entity data-right="ray" mixin="blink" blink-controls>
-            <a-entity position="0 0 -0.22" class="pose-label" text="value: Hello World; align: center;"></a-entity>
-        </a-entity>
-        <a-entity data-left="ray" mixin="blink" blink-controls>
-            <a-entity position="0 0 -0.22" class="pose-label" text="value: Hello World; align: center;"></a-entity>
-        </a-entity>
+    <a-box
+            hoverable
+            grabbable
+            stretchable
+            draggable
+            droppable
+            color="blue"
+            position="0 0.5 -1.5"
+    ></a-box>
 
-        <!-- These act like anchors pulling both hands and controllers towards grabable objects, moving the whole hand and the attached elements-->
-        <a-entity id="right-magnet" data-right="grip" data-magnet=".magnet-right:not([data-no-magnet]),.magnet:not([data-no-magnet])" grab-magnet-target="startEvents:squeezestart,pose_fist;stopEvents:pose_flat_fuseShort,squeezeend;"></a-entity>
-        <a-entity id="left-magnet" data-left="grip"  data-magnet=".magnet-left:not([data-no-magnet]),.magnet:not([data-no-magnet])"  grab-magnet-target="startEvents:squeezestart,pose_fist;stopEvents:pose_flat_fuseShort,squeezeend;"></a-entity>
+    <a-entity ref="rig" id="rig" position="0 0 0" rotation="0 0 0" progressive-controls>
+        <a-camera camera wasd-control look-controls position="0 1.65 0" super-hands>
+            <a-entity raycaster></a-entity>
+        </a-camera>
 
-        <!-- Markers to let us know the real location of the hands -->
-        <a-sphere id="right-no-magnet" data-right="grip" data-no-magnet radius="0.01" color="red"></a-sphere>
-        <a-sphere id="left-no-magnet" data-left="grip" data-no-magnet radius="0.01" color="red"></a-sphere>
-
-        <!-- Invisible objects at the tips of each finger for physics or intersections -->
-        <a-sphere data-right="index-finger-tip" radius="0.01" visible="false"></a-sphere>
-        <a-sphere data-right="middle-finger-tip" radius="0.01" visible="false"></a-sphere>
-        <a-sphere data-right="ring-finger-tip" radius="0.01" visible="false"></a-sphere>
-        <a-sphere data-right="pinky-finger-tip" radius="0.01" visible="false"></a-sphere>
-        <a-sphere data-right="thumb-tip" radius="0.01" visible="false"></a-sphere>
-        <a-sphere data-left="index-finger-tip" radius="0.01" visible="false"></a-sphere>
-        <a-sphere data-left="middle-finger-tip" radius="0.01" visible="false"></a-sphere>
-        <a-sphere data-left="ring-finger-tip" radius="0.01" visible="false"></a-sphere>
-        <a-sphere data-left="pinky-finger-tip" radius="0.01" visible="false"></a-sphere>
-        <a-sphere data-left="thumb-tip" radius="0.01" visible="false"></a-sphere>
+        <a-entity
+                id="leftHand"
+                class="left-controller"
+                sphere-collider="objects: a-box"
+                super-hands
+                hand-controls="hand: left"
+        ></a-entity>
+        <a-entity
+                id="rightHand"
+                class="right-controller"
+                sphere-collider="objects: a-box"
+                super-hands
+                hand-controls="hand: right"
+        ></a-entity>
     </a-entity>
-<!--    <a-assets timeout="300000">-->
-<!--&lt;!&ndash;        <a-asset-item ref="carModel" id="carModel" src="assets/porsche/scene.gltf"></a-asset-item>&ndash;&gt;-->
-<!--        <a-asset-item ref="minivanModel" id="minivanModel" src="assets/minivan/scene.gltf"></a-asset-item>-->
-<!--&lt;!&ndash;        <a-asset-item id="nissanModel" src="assets/nissan/nissan.glb"></a-asset-item>&ndash;&gt;-->
-<!--        <a-asset-item id="carWheel" src="assets/wheel/scene.gltf"></a-asset-item>-->
-<!--    </a-assets>-->
-
-<!--    <a-entity width="5" height="5" position="-5 0 -5" gltf-model="#minivanModel" dynamic-body hoverable grabbable find-door></a-entity>-->
-<!--    <a-entity position="-1 -1.65 -1.5" gltf-model="#carWheel"></a-entity>-->
-<!--&lt;!&ndash;    <a-entity position="5 0 -5" gltf-model="#carModel" dynamic-body></a-entity>&ndash;&gt;-->
-<!--&lt;!&ndash;    <a-entity position="-10 0 -30" gltf-model="#nissanModel" dynamic-body></a-entity>&ndash;&gt;-->
-
-<!--    <a-sky color="#87CEEB"></a-sky>-->
-<!--    <a-plane-->
-<!--            rotation="-90 0 0"-->
-<!--            width="50"-->
-<!--            height="50"-->
-<!--            color="#7BC8A4"-->
-<!--            static-body-->
-<!--            src="https://upload.wikimedia.org/wikipedia/commons/6/68/Callisto_terrain.jpg"-->
-<!--    ></a-plane>-->
-<!--    <a-plane-->
-<!--            position="50 0 -50"-->
-<!--            rotation="-90 0 0"-->
-<!--            width="500"-->
-<!--            height="50"-->
-<!--            color="#7BC8A4"-->
-<!--            static-body-->
-<!--            src="https://cdn.polyhaven.com/asset_img/primary/rocky_terrain_02.png?height=760"-->
-<!--    ></a-plane>-->
-<!--    <a-text-->
-<!--            ref="vrLogger"-->
-<!--            id="vrLogger"-->
-<!--            position="0 2 -10"-->
-<!--            value="Hi"-->
-<!--            geometry="primitive:plane"-->
-<!--    ></a-text>-->
-
-<!--    <a-box-->
-<!--            position="0 1 -5"-->
-<!--            depth="1"-->
-<!--            height="1"-->
-<!--            width="1"-->
-<!--            color="#EF2D5E"-->
-<!--            animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"-->
-<!--            dynamic-body-->
-<!--            grabbable-->
-<!--    ></a-box>-->
-
-<!--    <a-box-->
-<!--            hoverable-->
-<!--            grabbable-->
-<!--            stretchable-->
-<!--            draggable-->
-<!--            droppable-->
-<!--            color="blue"-->
-<!--            position="0 0.5 -1.5"-->
-<!--    ></a-box>-->
-
-<!--    <a-entity ref="rig" id="rig" position="0 0 0" rotation="0 0 0">-->
-<!--        <a-entity camera wasd-control look-controls position="0 1.65 0"></a-entity>-->
-
-<!--        <a-entity-->
-<!--                id="leftHand"-->
-<!--                sphere-collider="objects: a-box"-->
-<!--                super-hands-->
-<!--                hand-controls="hand: left"-->
-<!--        ></a-entity>-->
-<!--        <a-entity-->
-<!--                id="rightHand"-->
-<!--                sphere-collider="objects: a-box"-->
-<!--                super-hands-->
-<!--                hand-controls="hand: right"-->
-<!--        ></a-entity>-->
-<!--    </a-entity>-->
 </a-scene>
 
 <script src="scenes/storybook/main.js"></script>
-<!--<script src="scenes/storybook/components/minivan-interactions.js"></script>-->
+<script src="scenes/storybook/components/minivan-interactions.js"></script>
 </body>
 </html>

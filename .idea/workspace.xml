@@ -7,7 +7,6 @@
     <list default="true" id="bb234792-6862-49b2-8145-698cf6161674" name="Changes" comment="for test purposes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend-plain/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-plain/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-plain/scenes/storybook/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-plain/scenes/storybook/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "dev",
-    "last_opened_file_path": "/home/alexandr/projects/vr/pelmen/frontend-plain/assets",
+    "last_opened_file_path": "/home/alexandr/projects/phichology",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -110,15 +109,7 @@
       <workItem from="1741468312763" duration="599000" />
       <workItem from="1741552181382" duration="40264000" />
       <workItem from="1741718453475" duration="289000" />
-      <workItem from="1741800497964" duration="34213000" />
-    </task>
-    <task id="LOCAL-00029" summary="for test purposes">
-      <option name="closed" value="true" />
-      <created>1741709053205</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1741709053205</updated>
+      <workItem from="1741800497964" duration="36098000" />
     </task>
     <task id="LOCAL-00030" summary="for test purposes">
       <option name="closed" value="true" />
@@ -504,7 +495,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741881862977</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1741882486397</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1741882486397</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
