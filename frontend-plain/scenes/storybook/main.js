@@ -35,6 +35,8 @@ sceneRef.addEventListener('loaded', () => {
     const leftHand = sceneRef.querySelector('#leftHand')
     const rightHand = sceneRef.querySelector('#rightHand')
 
+    if (!leftHand || !rightHand) return
+
     leftHand.addEventListener('thumbstickmoved', (e) => {
         onThumbstickMoved(e)
     })
