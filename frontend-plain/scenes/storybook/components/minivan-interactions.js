@@ -2,27 +2,38 @@ AFRAME.registerComponent('find-door', {
     init: function () {
         this.el.addEventListener('model-loaded', evt => {
             const model = evt.detail.model;
-            console.log(model)
-            // model.traverse((child) => {
-            //     const isDoor = child.name.includes('Trunkdoor_Left'); // задняя левая дверь
-            //     const door = isDoor ? child : null;
-            //     // if (door) door.visible = false;
-            // });
+            let doorModel = null;
 
+            if (!model) return;
+            console.log(model);
+
+            // Ищем первый найденный объект с именем, содержащим 'Trunkdoor_Left'
             model.traverse(child => {
-                if (child.name.includes('Trunkdoor_Left')) {
-                    // Создаем обертку A-Frame
-                    const doorEl = document.createElement('a-entity');
-                    doorEl.setObject3D('mesh', child);
-                    // Добавляем компонент door-toggle для управления
-                    doorEl.setAttribute('door-toggle', '');
-                    // Добавляем элемент в сцену или как потомок исходного элемента модели
-                    this.el.appendChild(doorEl);
+                if (!doorModel && child.name && child.name.includes('Trunkdoor_Left')) {
+                    doorModel = child;
                 }
             });
+
+            if (!doorModel) {
+                console.warn('Дверь не найдена');
+                return;
+            }
+
+            // Проверяем, что doorModel является экземпляром THREE.Object3D
+            if (!(doorModel instanceof THREE.Object3D)) {
+                console.error('Найденный объект не является THREE.Object3D');
+                return;
+            }
+
+            // Создаем новый элемент и добавляем найденную дверь
+            const doorEl = document.createElement('a-entity');
+            doorEl.setObject3D('mesh', doorModel);
+            doorEl.setAttribute('door-toggle', '');
+            this.el.appendChild(doorEl);
         });
     }
 });
+
 
 AFRAME.registerComponent('door-toggle', {
     schema: {
