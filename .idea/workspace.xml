@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb234792-6862-49b2-8145-698cf6161674" name="Changes" comment="for test purposes">
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/wheel/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/wheel/scene.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/wheel/scene.gltf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/wheel/textures/Ratti_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/wheel/textures/Ratti_metallicRoughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/wheel/textures/Ratti_normal.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend-plain/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-plain/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend-plain/scenes/storybook/components/minivan-interactions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-plain/scenes/storybook/components/minivan-interactions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-plain/scenes/storybook/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-plain/scenes/storybook/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +60,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "dev",
-    "last_opened_file_path": "/home/alexandr/projects/vr/pelmen/frontend-plain",
+    "last_opened_file_path": "/home/alexandr/projects/vr/pelmen/frontend-plain/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -74,11 +81,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend-plain/assets" />
       <recent name="$PROJECT_DIR$/frontend-plain" />
       <recent name="$PROJECT_DIR$/frontend/public/sky/nissan" />
       <recent name="$PROJECT_DIR$/frontend/public" />
       <recent name="$PROJECT_DIR$/frontend/src/assets" />
-      <recent name="$PROJECT_DIR$/nginx" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend-plain/scenes/storybook" />
@@ -110,15 +117,7 @@
       <workItem from="1741468312763" duration="599000" />
       <workItem from="1741552181382" duration="40264000" />
       <workItem from="1741718453475" duration="289000" />
-      <workItem from="1741800497964" duration="29227000" />
-    </task>
-    <task id="LOCAL-00024" summary="for test purposes">
-      <option name="closed" value="true" />
-      <created>1741699483800</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1741699483800</updated>
+      <workItem from="1741800497964" duration="31992000" />
     </task>
     <task id="LOCAL-00025" summary="for test purposes">
       <option name="closed" value="true" />
@@ -504,7 +503,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741876116923</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1741876715123</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1741876715123</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

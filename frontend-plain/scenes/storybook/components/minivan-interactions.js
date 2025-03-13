@@ -26,9 +26,18 @@ AFRAME.registerComponent('find-door', {
 
             console.log(doorModel);
             // Добавляем компонент 'door-toggle' к найденной двери
-            doorModel.userData.isDoor = true;
-            this.el.setObject3D('door', doorModel);
-            this.el.setAttribute('door-toggle', '');
+            // doorModel.userData.isDoor = true;
+            // this.el.setObject3D('door', doorModel);
+            // this.el.setAttribute('door-toggle', '');
+
+            const doorEl = document.createElement('a-entity');
+            const doorClone = doorModel.clone();
+            doorEl.setObject3D('mesh', doorClone);
+            doorEl.setAttribute('scale', '0.15 0.15 0.15');
+            doorEl.setAttribute('position', '0 5 0');
+            doorEl.setAttribute('rotation', '0 90 0');
+            doorEl.setAttribute('door-toggle', '');
+            this.el.appendChild(doorEl);
         });
     }
 });

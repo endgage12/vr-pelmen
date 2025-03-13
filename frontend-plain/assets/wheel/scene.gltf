@@ -1,0 +1,318 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 2008,
+      "max": [
+        0.13978761434555054,
+        0.13902923464775085,
+        0.01316828653216362
+      ],
+      "min": [
+        -0.1383054107427597,
+        -0.13906416296958923,
+        -0.033665504306554794
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 24096,
+      "componentType": 5126,
+      "count": 2008,
+      "max": [
+        0.9999982118606567,
+        0.9999915361404419,
+        0.9999382495880127
+      ],
+      "min": [
+        -0.9999982714653015,
+        -0.9999920129776001,
+        -0.9953815937042236
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 2008,
+      "max": [
+        0.9995190501213074,
+        0.9995762705802917,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.9996293783187866,
+        -1.0,
+        -0.9999998807907104,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 2008,
+      "max": [
+        0.779233455657959,
+        0.9883257150650024
+      ],
+      "min": [
+        0.03973127156496048,
+        0.23453475534915924
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 16064,
+      "componentType": 5126,
+      "count": 2008,
+      "max": [
+        0.9751914739608765,
+        0.9808250665664673
+      ],
+      "min": [
+        0.019174955785274506,
+        0.019174963235855103
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 32128,
+      "componentType": 5126,
+      "count": 2008,
+      "max": [
+        0.779233455657959,
+        0.9883257150650024
+      ],
+      "min": [
+        0.03973127156496048,
+        0.23453475534915924
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 8256,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Jorma Rysky (Joona Venäläinen) (https://sketchfab.com/Rysky)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/50s-stock-car-steering-wheel-fcbecf6de2304ff085730f1827aeb11e",
+      "title": "50's Stock Car Steering Wheel"
+    },
+    "generator": "Sketchfab-12.68.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 33024,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 48192,
+      "byteOffset": 33024,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 48192,
+      "byteOffset": 81216,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 32128,
+      "byteOffset": 129408,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 161536,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Ratti_baseColor.png"
+    },
+    {
+      "uri": "textures/Ratti_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/Ratti_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "name": "Ratti",
+      "normalTexture": {
+        "index": 2
+      },
+      "occlusionTexture": {
+        "index": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "SteeringWheel_256_Ratti_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4,
+            "TEXCOORD_2": 5
+          },
+          "indices": 6,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        0.016824210062623024,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        3.7357250765308656e-18,
+        -0.016824210062623024,
+        0.0,
+        0.0,
+        0.016824210062623024,
+        3.7357250765308656e-18,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "2b1acc577340487d80711219b63a220b.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        71.93397164856783,
+        -69.4658457291282,
+        5.551115123125783e-15,
+        0.0,
+        -3.0364486702794125e-06,
+        -3.1443338821546263e-06,
+        -99.99999999999991,
+        0.0,
+        69.46584572912813,
+        71.93397164856776,
+        -4.371139006309477e-06,
+        0.0,
+        -8.157711029052734,
+        170.17359924316406,
+        39.47166442871094,
+        1.0
+      ],
+      "name": "SteeringWheel_256"
+    },
+    {
+      "mesh": 0,
+      "name": "SteeringWheel_256_Ratti_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}
