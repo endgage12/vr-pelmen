@@ -26,10 +26,10 @@ AFRAME.registerComponent('find-door', {
             }
 
             // Создаем новый элемент и добавляем найденную дверь
-            const doorEl = document.createElement('a-entity');
-            doorEl.setObject3D('mesh', doorModel);
-            doorEl.setAttribute('door-toggle', '');
-            this.el.appendChild(doorEl);
+            // const doorEl = document.createElement('a-entity');
+            // doorEl.setObject3D('mesh', doorModel);
+            // doorEl.setAttribute('door-toggle', '');
+            // this.el.appendChild(doorEl);
         });
     }
 });
