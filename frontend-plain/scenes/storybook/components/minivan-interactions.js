@@ -1,6 +1,6 @@
 AFRAME.registerComponent('find-door', {
     init: function () {
-        this.el.addEventListener('model-loaded', evt => {
+        this.el.addEventListener('model-loaded', (evt) => {
             const model = evt.detail.model;
             let doorModel = null;
 
@@ -13,7 +13,6 @@ AFRAME.registerComponent('find-door', {
                     doorModel = child;
                 }
             });
-
             if (!doorModel) {
                 console.warn('Дверь не найдена');
                 return;
@@ -25,6 +24,8 @@ AFRAME.registerComponent('find-door', {
                 return;
             }
 
+            console.log(doorModel);
+            doorModel.setAttribute('door-toggle', '')
             // Создаем новый элемент и добавляем найденную дверь
             // const doorEl = document.createElement('a-entity');
             // doorEl.setObject3D('mesh', doorModel);
