@@ -25,17 +25,10 @@ AFRAME.registerComponent('find-door', {
             }
 
             console.log(doorModel);
-            const doorEl = document.createElement('a-entity');
-            const doorClone = doorModel.clone();
-            doorEl.setObject3D('mesh', doorClone);
-            doorEl.setAttribute('position', '1 2 1');
-            doorEl.setAttribute('door-toggle', '');
-            this.el.appendChild(doorEl);
-            // Создаем новый элемент и добавляем найденную дверь
-            // const doorEl = document.createElement('a-entity');
-            // doorEl.setObject3D('mesh', doorModel);
-            // doorEl.setAttribute('door-toggle', '');
-            // this.el.appendChild(doorEl);
+            // Добавляем компонент 'door-toggle' к найденной двери
+            doorModel.userData.isDoor = true;
+            this.el.setObject3D('door', doorModel);
+            this.el.setAttribute('door-toggle', '');
         });
     }
 });
@@ -49,26 +42,26 @@ AFRAME.registerComponent('door-toggle', {
     },
     init: function () {
         this.isOpen = false;
-        // Обработчик события, например, при захвате (grab-start)
+        // Обработчик события 'grab-start'
         this.el.addEventListener('grab-start', () => {
-            if (this.isOpen) {
-                // Закрываем: возвращаем в исходное положение
-                this.el.setAttribute('animation__close', {
-                    property: 'rotation',
-                    to: `${this.data.closedRotation.x} ${this.data.closedRotation.y} ${this.data.closedRotation.z}`,
-                    dur: this.data.duration,
-                    easing: 'easeInOutQuad'
-                });
-            } else {
-                // Открываем: поворачиваем дверь на заданный угол
-                this.el.setAttribute('animation__open', {
-                    property: 'rotation',
-                    to: `${this.data.openRotation.x} ${this.data.openRotation.y} ${this.data.openRotation.z}`,
-                    dur: this.data.duration,
-                    easing: 'easeInOutQuad'
-                });
-            }
+            const door = this.el.getObject3D('door');
+            if (!door) return;
+
+            const targetRotation = this.isOpen ? this.data.closedRotation : this.data.openRotation;
+            // Анимация вращения двери
+            new TWEEN.Tween(door.rotation)
+                .to({
+                    x: THREE.Math.degToRad(targetRotation.x),
+                    y: THREE.Math.degToRad(targetRotation.y),
+                    z: THREE.Math.degToRad(targetRotation.z)
+                }, this.data.duration)
+                .easing(TWEEN.Easing.Quadratic.InOut)
+                .start();
+
             this.isOpen = !this.isOpen;
         });
+    },
+    tick: function (time) {
+        TWEEN.update(time);
     }
 });
