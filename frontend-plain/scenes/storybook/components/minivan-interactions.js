@@ -74,3 +74,27 @@ AFRAME.registerComponent('door-toggle', {
         TWEEN.update(time);
     }
 });
+
+AFRAME.registerComponent('shooting', {
+    init: function () {
+        this.el.addEventListener('triggerdown', () => {
+            // Создание элемента пули
+            const bullet = document.createElement('a-sphere');
+            const handPos = this.el.getAttribute('position');
+            bullet.setAttribute('position', handPos);
+            bullet.setAttribute('radius', '0.05');
+            bullet.setAttribute('color', '#EF2D5E');
+            // Применяем физику с помощью physx (динамическое тело)
+            bullet.setAttribute('physx-body', 'type: dynamic; mass: 0.1');
+
+            // Добавляем пулю в сцену
+            this.el.sceneEl.appendChild(bullet);
+
+            // Здесь можно добавить код для применения импульса
+            // (например, через API physx, чтобы пуля летела вперёд)
+            // Псевдокод:
+            // const impulse = { x: 0, y: 0, z: -10 };
+            // bullet.body.applyImpulse(impulse, bullet.body.getPosition());
+        });
+    }
+});
