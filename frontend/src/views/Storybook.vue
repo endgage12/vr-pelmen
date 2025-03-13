@@ -1,13 +1,14 @@
 <template>
   <a-scene ref="sceneRef" @loaded="onLoad" stats>
     <a-assets timeout="300000" @loaded="onAssetsLoaded">
-      <a-assets-item ref="carModel" id="carModel" src="/public/porsche/scene.gltf"></a-assets-item>
-      <a-assets-item
-        ref="minivanModel"
-        id="minivanModel"
-        src="/public/minivan/scene.gltf"
-      ></a-assets-item>
+      <a-asset-item ref="carModel" id="carModel" src="/public/porsche/scene.gltf"></a-asset-item>
+      <a-asset-item ref="minivanModel" id="minivanModel" src="/minivan/scene.gltf"></a-asset-item>
+      <a-asset-item id="nissanModel" src="/nissan/nissan.glb"></a-asset-item>
     </a-assets>
+
+    <a-entity position="-3 0 5" gltf-model="#minivanModel" dynamic-body></a-entity>
+    <a-entity position="3 0 5" gltf-model="#carModel" dynamic-body></a-entity>
+    <a-entity position="-10 0 10" gltf-model="#nissanModel" dynamic-body></a-entity>
 
     <a-sky color="#87CEEB"></a-sky>
     <a-plane
@@ -71,22 +72,13 @@
         super-hands
         hand-controls="hand: right"
       ></a-entity>
-      <!--      <a-entity-->
-      <!--        @thumbstickmoved="onThumbstickMoved"-->
-      <!--        meta-touch-controls="hand: left; model: true;"-->
-      <!--      ></a-entity>-->
-
-      <!--      <a-entity-->
-      <!--        @thumbstickmoved="onThumbstickRotation"-->
-      <!--        meta-touch-controls="hand: right; model: true;"-->
-      <!--      ></a-entity>-->
     </a-entity>
   </a-scene>
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue'
-import * as THREE from 'three'
+import { ref, watch, onMounted } from 'vue'
+// import * as THREE from 'three'
 
 const emit = defineEmits(['loaded'])
 
@@ -133,34 +125,13 @@ const onThumbstickMoved = (e: any) => {
   rig.value.object3D.position.add(forwardMovement).add(sidewaysMovement)
 }
 
-watch(carModel, () => {
-  if (!carModel.value) return
+onMounted(() => {
+  console.log('mounted')
 
-  // Создаем новый элемент a-entity
-  const carModelWrapper = document.createElement('a-entity')
-  carModelWrapper.setAttribute('position', '-3 0 -5')
-  carModelWrapper.setAttribute('gltf-model', '#carModel')
-  carModelWrapper.setAttribute('dynamic-body', '')
-  carModelWrapper.setAttribute('grabbable', '')
-
-  // Добавляем созданный элемент в сцену
-  sceneRef.value.appendChild(carModelWrapper)
-  console.log(carModel.value)
-})
-
-watch(minivanModel, () => {
-  if (!minivanModel.value) return
-
-  // Создаем новый элемент a-entity
-  const minivanModelWrapper = document.createElement('a-entity')
-  minivanModelWrapper.setAttribute('position', '-7 0 -5')
-  minivanModelWrapper.setAttribute('gltf-model', '#minivanModel')
-  minivanModelWrapper.setAttribute('dynamic-body', '')
-  minivanModelWrapper.setAttribute('grabbable', '')
-
-  // Добавляем созданный элемент в сцену
-  sceneRef.value.appendChild(minivanModelWrapper)
-  console.log(minivanModel.value)
+  setTimeout(() => {
+    sceneRef.value.load()
+    console.log('scene loaded')
+  }, 5000)
 })
 </script>
 

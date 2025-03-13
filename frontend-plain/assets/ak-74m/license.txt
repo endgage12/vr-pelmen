@@ -1,0 +1,11 @@
+Model Information:
+* title:	AK-74M
+* source:	https://sketchfab.com/3d-models/ak-74m-8a6f4e1bb84d469f9fdc809614fee022
+* author:	Rendy K (https://sketchfab.com/RendyK)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "AK-74M" (https://sketchfab.com/3d-models/ak-74m-8a6f4e1bb84d469f9fdc809614fee022) by Rendy K (https://sketchfab.com/RendyK) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

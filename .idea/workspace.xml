@@ -4,7 +4,84 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb234792-6862-49b2-8145-698cf6161674" name="Changes" comment="for test purposes" />
+    <list default="true" id="bb234792-6862-49b2-8145-698cf6161674" name="Changes" comment="for test purposes">
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/ak-74m/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/ak-74m/scene.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/ak-74m/scene.gltf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/ak-74m/textures/Barrel.001_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/ak-74m/textures/Barrel.001_metallicRoughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/ak-74m/textures/Barrel.001_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/ak-74m/textures/Base_Gun_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/ak-74m/textures/Base_Gun_metallicRoughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/ak-74m/textures/Base_Gun_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/ak-74m/textures/Base_gun_2_metallicRoughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/ak-74m/textures/Base_gun_2_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/ak-74m/textures/Material.001_metallicRoughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/ak-74m/textures/Material.001_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/minivan/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/minivan/scene.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/minivan/scene.gltf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/minivan/textures/GENERIC_BADGES_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/minivan/textures/GENERIC_BADGES_specularf0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/minivan/textures/Material_31_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/minivan/textures/Material_31_metallicRoughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/minivan/textures/Material_31_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/minivan/textures/Numberplates_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/minivan/textures/RIMSTOCK_01_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/minivan/textures/RIMSTOCK_01_metallicRoughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/minivan/textures/RIMSTOCK_01_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/minivan/textures/SHVAN95_HEADLIGHTS_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/minivan/textures/UCB_BOTTOM_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/minivan/textures/UCB_BOTTOM_metallicRoughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/minivan/textures/UCB_BOTTOM_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/minivan/textures/UCB_GLASS_CLEAN_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/nissan/nissan.glb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/scene.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/scene.gltf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/930_chromes_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/930_chromes_metallicRoughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/930_lights_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/930_lights_metallicRoughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/930_lights_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/930_plastics_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/930_plastics_metallicRoughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/930_rim_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/930_rim_metallicRoughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/930_rim_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/930_stickers_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/930_tire_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/930_tire_metallicRoughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/930_tire_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/930_wunderbaum_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/930_wunderbaum_metallicRoughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/coat_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/coat_metallicRoughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/glass_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/glass_metallicRoughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/material_0_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/paint_clearcoat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/paint_clearcoat_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/paint_clearcoat_roughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/paint_metallicRoughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/plate_baseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/porsche/textures/plate_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/sky/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/sky/scene.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/sky/scene.gltf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/assets/sky/textures/Material__25__background_JPG_002_emissive.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/scenes/storybook/components/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-plain/utils/thumbstick.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/nissan/nissan.glb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/Storybook.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Storybook.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/nginx.local.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/nginx.local.conf" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +125,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "dev",
-    "last_opened_file_path": "/home/alexandr/projects/vr/pelmen/frontend/public",
+    "last_opened_file_path": "/home/alexandr/projects/vr/pelmen/frontend-plain",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -69,17 +146,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend-plain" />
+      <recent name="$PROJECT_DIR$/frontend/public/sky/nissan" />
       <recent name="$PROJECT_DIR$/frontend/public" />
       <recent name="$PROJECT_DIR$/frontend/src/assets" />
       <recent name="$PROJECT_DIR$/nginx" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/public" />
+      <recent name="$PROJECT_DIR$/frontend/src/views" />
       <recent name="$PROJECT_DIR$/nginx/ssl_old" />
       <recent name="$PROJECT_DIR$/nginx/ssl" />
       <recent name="$PROJECT_DIR$/nginx" />
-      <recent name="$PROJECT_DIR$/nginx/certbot" />
-      <recent name="$PROJECT_DIR$/frontend/public" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -104,15 +182,7 @@
       <workItem from="1741468312763" duration="599000" />
       <workItem from="1741552181382" duration="40264000" />
       <workItem from="1741718453475" duration="289000" />
-      <workItem from="1741800497964" duration="16239000" />
-    </task>
-    <task id="LOCAL-00014" summary="for test purposes">
-      <option name="closed" value="true" />
-      <created>1741694189153</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1741694189153</updated>
+      <workItem from="1741800497964" duration="23982000" />
     </task>
     <task id="LOCAL-00015" summary="for test purposes">
       <option name="closed" value="true" />
@@ -498,7 +568,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741817599347</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1741817968145</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1741817968145</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

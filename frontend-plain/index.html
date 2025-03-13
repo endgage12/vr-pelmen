@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <script>
+        delete AFRAME.components["grabbable"];
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.5.x/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/super-hands@^3.0.5/dist/super-hands.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/MozillaReality/ammo.js@8bbc0ea/builds/ammo.wasm.js"></script>
+</head>
+<body>
+<a-scene id="sceneRef" stats>
+    <a-assets timeout="300000">
+        <a-asset-item ref="carModel" id="carModel" src="assets/porsche/scene.gltf"></a-asset-item>
+        <a-asset-item ref="minivanModel" id="minivanModel" src="assets/minivan/scene.gltf"></a-asset-item>
+        <a-asset-item id="nissanModel" src="assets/nissan/nissan.glb"></a-asset-item>
+    </a-assets>
+
+    <a-entity position="-5 0 -5" gltf-model="#minivanModel" dynamic-body></a-entity>
+    <a-entity position="5 0 -5" gltf-model="#carModel" dynamic-body></a-entity>
+    <a-entity position="-10 0 -30" gltf-model="#nissanModel" dynamic-body></a-entity>
+
+    <a-sky color="#87CEEB"></a-sky>
+    <a-plane
+            rotation="-90 0 0"
+            width="50"
+            height="50"
+            color="#7BC8A4"
+            static-body
+            src="https://upload.wikimedia.org/wikipedia/commons/6/68/Callisto_terrain.jpg"
+    ></a-plane>
+    <a-plane
+            position="50 0 -50"
+            rotation="-90 0 0"
+            width="500"
+            height="50"
+            color="#7BC8A4"
+            static-body
+            src="https://cdn.polyhaven.com/asset_img/primary/rocky_terrain_02.png?height=760"
+    ></a-plane>
+    <a-text
+            ref="vrLogger"
+            id="vrLogger"
+            position="0 2 -10"
+            value="Hi"
+            geometry="primitive:plane"
+    ></a-text>
+
+    <a-box
+            position="0 1 -5"
+            depth="1"
+            height="1"
+            width="1"
+            color="#EF2D5E"
+            animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"
+            dynamic-body
+            grabbable
+    ></a-box>
+
+    <a-box
+            hoverable
+            grabbable
+            stretchable
+            draggable
+            droppable
+            color="blue"
+            position="0 0 -1"
+    ></a-box>
+
+    <a-entity ref="rig" id="rig" position="0 0 0" rotation="0 0 0">
+        <a-entity camera wasd-control look-controls position="0 1.65 0"></a-entity>
+
+        <a-entity
+                id="leftHand"
+                sphere-collider="objects: a-box"
+                super-hands
+                hand-controls="hand: left"
+        ></a-entity>
+        <a-entity
+                id="rightHand"
+                sphere-collider="objects: a-box"
+                super-hands
+                hand-controls="hand: right"
+        ></a-entity>
+    </a-entity>
+</a-scene>
+
+<script type="module" src="scenes/storybook/components/main.js"></script>
+</body>
+</html>
