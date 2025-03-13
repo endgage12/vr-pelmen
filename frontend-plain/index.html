@@ -17,14 +17,14 @@
 <body>
 <a-scene id="sceneRef" stats>
     <a-assets timeout="300000">
-        <a-asset-item ref="carModel" id="carModel" src="assets/porsche/scene.gltf"></a-asset-item>
+<!--        <a-asset-item ref="carModel" id="carModel" src="assets/porsche/scene.gltf"></a-asset-item>-->
         <a-asset-item ref="minivanModel" id="minivanModel" src="assets/minivan/scene.gltf"></a-asset-item>
-        <a-asset-item id="nissanModel" src="assets/nissan/nissan.glb"></a-asset-item>
+<!--        <a-asset-item id="nissanModel" src="assets/nissan/nissan.glb"></a-asset-item>-->
     </a-assets>
 
     <a-entity position="-5 0 -5" gltf-model="#minivanModel" dynamic-body></a-entity>
-    <a-entity position="5 0 -5" gltf-model="#carModel" dynamic-body></a-entity>
-    <a-entity position="-10 0 -30" gltf-model="#nissanModel" dynamic-body></a-entity>
+<!--    <a-entity position="5 0 -5" gltf-model="#carModel" dynamic-body></a-entity>-->
+<!--    <a-entity position="-10 0 -30" gltf-model="#nissanModel" dynamic-body></a-entity>-->
 
     <a-sky color="#87CEEB"></a-sky>
     <a-plane
@@ -91,6 +91,6 @@
     </a-entity>
 </a-scene>
 
-<script type="module" src="scenes/storybook/components/main.js"></script>
+<script src="scenes/storybook/components/main.js"></script>
 </body>
 </html>
