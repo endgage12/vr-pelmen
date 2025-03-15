@@ -97,7 +97,10 @@ AFRAME.registerComponent('shooting', {
             const consoleRef = document.querySelector('#vrLogger')
             consoleRef.setAttribute('value', 'triggerup')
             const bulletInHand = document.querySelector('.in-hand')
-            if (!bulletInHand) return
+            if (!bulletInHand) {
+                consoleRef.setAttribute('value', 'Bullet not founded')
+                return
+            }
 
             bulletInHand.setAttribute('physx-body', 'type: dynamic; mass: 0.1;')
             bulletInHand.removeAttribute('class')
