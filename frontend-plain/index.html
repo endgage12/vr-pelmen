@@ -80,7 +80,7 @@
     ></a-box>
     <a-box position="-10 1 -30" rotation="0 45 0" color="#4CC3D9" class="collidable" physx-body="mass: 15; highPrecision: true; emitCollisionEvents: true;"></a-box>
     <a-entity physx-body class="collidable" width="5" height="5" position="-5 0 -5" gltf-model="#minivanModel" hoverable grabbable find-door></a-entity>
-    <a-entity physx-body="static" class="collidable" position="-1 -1.65 -1.5" gltf-model="#carWheel" event-set__enter="_event: collision-start; color: #EF2D5E" event-set__leave="_event: collision-end; color: #4CC3D9"></a-entity>
+    <a-entity physx-body="type: static" class="collidable" position="-1 -1.65 -1.5" gltf-model="#carWheel" event-set__enter="_event: collision-start; color: #EF2D5E" event-set__leave="_event: collision-end; color: #4CC3D9"></a-entity>
 <!--    <a-entity position="5 0 -5" gltf-model="#carModel"></a-entity>-->
 <!--    <a-entity position="-10 0 -30" gltf-model="#nissanModel"></a-entity>-->
 
