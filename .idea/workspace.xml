@@ -5,8 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb234792-6862-49b2-8145-698cf6161674" name="Changes" comment="for test purposes">
+      <change afterPath="$PROJECT_DIR$/frontend-engine-build/MyWonderland-app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-engine-build/MyWonderland-app.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-engine-build/MyWonderland-bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-engine-build/MyWonderland-bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-engine-build/MyWonderland-textures.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-engine-build/MyWonderland.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-engine-build/WonderlandRuntime-LoadingScreen.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-engine-build/WonderlandRuntime-simd-threads.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-engine-build/WonderlandRuntime-simd-threads.wasm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-engine-build/WonderlandRuntime-simd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-engine-build/WonderlandRuntime-simd.wasm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-engine-build/WonderlandRuntime-threads.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-engine-build/WonderlandRuntime-threads.wasm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-engine-build/WonderlandRuntime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-engine-build/WonderlandRuntime.wasm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-engine-build/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-engine-build/sfx/click.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-engine-build/sfx/unclick.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-plain/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-plain/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-plain/scenes/storybook/components/minivan-interactions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-plain/scenes/storybook/components/minivan-interactions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +73,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "dev",
-    "last_opened_file_path": "/home/alexandr/projects/phichology",
+    "last_opened_file_path": "/home/alexandr/projects/vr/pelmen/frontend-engine-build",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -74,11 +94,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend-engine-build" />
       <recent name="$PROJECT_DIR$/frontend-plain/assets" />
       <recent name="$PROJECT_DIR$/frontend-plain" />
       <recent name="$PROJECT_DIR$/frontend/public/sky/nissan" />
       <recent name="$PROJECT_DIR$/frontend/public" />
-      <recent name="$PROJECT_DIR$/frontend/src/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend-plain/scenes/storybook" />
@@ -111,15 +131,8 @@
       <workItem from="1741552181382" duration="40264000" />
       <workItem from="1741718453475" duration="289000" />
       <workItem from="1741800497964" duration="49395000" />
-      <workItem from="1742034495377" duration="4009000" />
-    </task>
-    <task id="LOCAL-00045" summary="for test purposes">
-      <option name="closed" value="true" />
-      <created>1741803780651</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1741803780651</updated>
+      <workItem from="1742034495377" duration="4926000" />
+      <workItem from="1742040824218" duration="464000" />
     </task>
     <task id="LOCAL-00046" summary="for test purposes">
       <option name="closed" value="true" />
@@ -505,7 +518,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742038214659</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1742038952605</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1742038952605</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

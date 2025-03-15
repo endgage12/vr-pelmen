@@ -82,7 +82,7 @@ AFRAME.registerComponent('shooting', {
             bullet.setAttribute('class', 'in-hand');
             bullet.setAttribute('radius', '0.05');
             bullet.setAttribute('color', '#EF2D5E');
-            bullet.setAttribute('physx-body', 'type: static;');
+            bullet.setAttribute('physx-body', 'type: dynamic; mass: 0.1;');
 
             // Получаем мировую позицию руки
             const handWorldPos = new THREE.Vector3();
@@ -91,21 +91,23 @@ AFRAME.registerComponent('shooting', {
 
             // Добавляем пулю в сцену
             this.el.sceneEl.appendChild(bullet);
+            // Shot the bullet by physx
+
         });
 
-        this.el.addEventListener('triggerup', () => {
-            const consoleRef = document.querySelector('#vrLogger')
-            consoleRef.setAttribute('value', 'triggerup')
-            const bulletInHand = document.querySelector('.in-hand')
-            if (!bulletInHand) {
-                consoleRef.setAttribute('value', 'Bullet not founded')
-                return
-            }
-
-            bulletInHand.setAttribute('physx-body', 'type: dynamic; mass: 0.1;')
-            bulletInHand.removeAttribute('class')
-            consoleRef.setAttribute('value', JSON.stringify(bulletInHand))
-        })
+        // this.el.addEventListener('triggerup', () => {
+        //     const consoleRef = document.querySelector('#vrLogger')
+        //     consoleRef.setAttribute('value', 'triggerup')
+        //     const bulletInHand = document.querySelector('.in-hand')
+        //     if (!bulletInHand) {
+        //         consoleRef.setAttribute('value', 'Bullet not founded')
+        //         return
+        //     }
+        //
+        //     bulletInHand.setAttribute('physx-body', 'type: dynamic; mass: 0.1;')
+        //     bulletInHand.removeAttribute('class')
+        //     consoleRef.setAttribute('value', JSON.stringify(bulletInHand))
+        // })
     }
 });
 
