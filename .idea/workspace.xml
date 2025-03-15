@@ -5,28 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb234792-6862-49b2-8145-698cf6161674" name="Changes" comment="for test purposes">
-      <change afterPath="$PROJECT_DIR$/frontend-engine-build/MyWonderland-app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend-engine-build/MyWonderland-app.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend-engine-build/MyWonderland-bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend-engine-build/MyWonderland-bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend-engine-build/MyWonderland-textures.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend-engine-build/MyWonderland.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend-engine-build/WonderlandRuntime-LoadingScreen.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend-engine-build/WonderlandRuntime-simd-threads.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend-engine-build/WonderlandRuntime-simd-threads.wasm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend-engine-build/WonderlandRuntime-simd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend-engine-build/WonderlandRuntime-simd.wasm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend-engine-build/WonderlandRuntime-threads.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend-engine-build/WonderlandRuntime-threads.wasm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend-engine-build/WonderlandRuntime.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend-engine-build/WonderlandRuntime.wasm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend-engine-build/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend-engine-build/sfx/click.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend-engine-build/sfx/unclick.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.local.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-plain/scenes/storybook/components/minivan-interactions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-plain/scenes/storybook/components/minivan-interactions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,23 +112,7 @@
       <workItem from="1741718453475" duration="289000" />
       <workItem from="1741800497964" duration="49395000" />
       <workItem from="1742034495377" duration="4926000" />
-      <workItem from="1742040824218" duration="464000" />
-    </task>
-    <task id="LOCAL-00046" summary="for test purposes">
-      <option name="closed" value="true" />
-      <created>1741804051817</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1741804051817</updated>
-    </task>
-    <task id="LOCAL-00047" summary="for test purposes">
-      <option name="closed" value="true" />
-      <created>1741804188608</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1741804188608</updated>
+      <workItem from="1742040824218" duration="669000" />
     </task>
     <task id="LOCAL-00048" summary="for test purposes">
       <option name="closed" value="true" />
@@ -526,7 +490,23 @@
       <option name="project" value="LOCAL" />
       <updated>1742038952605</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1742041375306</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1742041375306</updated>
+    </task>
+    <task id="LOCAL-00096" summary="for test purposes">
+      <option name="closed" value="true" />
+      <created>1742041408294</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1742041408294</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

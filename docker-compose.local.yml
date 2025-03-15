@@ -16,7 +16,7 @@ services:
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
       #      - pelmen-test-frontend-dist:/usr/share/nginx/html
-      - ./frontend-engine:/usr/share/nginx/html
+      - ./frontend-engine-build:/usr/share/nginx/html
       - ./nginx/ssl:/etc/nginx/certs
     ports:
       - '80:80'
