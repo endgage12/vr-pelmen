@@ -80,9 +80,10 @@ AFRAME.registerComponent('shooting', {
         this.el.addEventListener('triggerdown', () => {
             // Создаем элемент пули
             const bullet = document.createElement('a-sphere');
+            bullet.setAttribute('class', 'in-hand');
             bullet.setAttribute('radius', '0.05');
             bullet.setAttribute('color', '#EF2D5E');
-            bullet.setAttribute('physx-body', 'type: dynamic; mass: 0.1');
+            bullet.setAttribute('physx-body', 'type: static;');
 
             // Получаем мировую позицию руки
             const handWorldPos = new THREE.Vector3();
@@ -91,32 +92,15 @@ AFRAME.registerComponent('shooting', {
 
             // Добавляем пулю в сцену
             this.el.sceneEl.appendChild(bullet);
-
-            // Получаем направление выстрела из руки
-            const direction = new THREE.Vector3();
-            this.el.object3D.getWorldDirection(direction);
-
-            // Определяем силу выстрела (настройте по своему усмотрению)
-            const force = 30; // сила импульса
-
-            // Рассчитываем импульс как вектор
-            const impulse = {
-                x: direction.x * force,
-                y: direction.y * force,
-                z: direction.z * force
-            };
-
-            // Применяем импульс с небольшой задержкой, чтобы убедиться,
-            // что физическое тело пули полностью инициализировано
-            setTimeout(() => {
-                if (bullet.body) {
-                    // Применяем импульс в позиции пули
-                    bullet.body.AddForceAtPosition(impulse, bullet.body.getPosition());
-                } else {
-                    console.warn('Физическое тело пули не найдено или API изменился.');
-                }
-            }, 50);
         });
+
+        this.el.addEventListener('triggerup', () => {
+            const bulletInHand = document.querySelector('.in-hand')
+            if (!bulletInHand) return
+
+            bulletInHand.setAttribute('physx-body', 'type: dynamic; mass: 0.1;')
+            bulletInHand.removeAttribute('class')
+        })
     }
 });
 
