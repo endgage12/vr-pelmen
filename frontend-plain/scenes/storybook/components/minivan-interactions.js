@@ -42,7 +42,6 @@ AFRAME.registerComponent('find-door', {
     }
 });
 
-
 AFRAME.registerComponent('door-toggle', {
     schema: {
         openRotation: {type: 'vec3', default: {x: 0, y: 90, z: 0}},
@@ -95,11 +94,14 @@ AFRAME.registerComponent('shooting', {
         });
 
         this.el.addEventListener('triggerup', () => {
+            const consoleRef = document.querySelector('#vrLogger')
+            consoleRef.setAttribute('value', 'triggerup')
             const bulletInHand = document.querySelector('.in-hand')
             if (!bulletInHand) return
 
             bulletInHand.setAttribute('physx-body', 'type: dynamic; mass: 0.1;')
             bulletInHand.removeAttribute('class')
+            consoleRef.setAttribute('value', JSON.stringify(bulletInHand))
         })
     }
 });
