@@ -25,6 +25,28 @@
         <a-asset-item id="carWheel" src="assets/wheel/scene.gltf"></a-asset-item>
     </a-assets>
 
+    <a-entity ref="rig" id="rig" position="0 0 0" rotation="0 0 0" progressive-controls>
+        <a-camera camera wasd-control look-controls position="0 1.65 0" super-hands>
+            <a-entity raycaster></a-entity>
+        </a-camera>
+
+        <a-entity
+                id="leftHand"
+                class="left-controller"
+                super-hands
+                hand-controls="hand: left"
+                physx-body="type: kinematic"
+        ></a-entity>
+        <a-entity
+                id="rightHand"
+                class="right-controller"
+                super-hands
+                shooting
+                hand-controls="hand: right"
+                physx-body="type: kinematic"
+        ></a-entity>
+    </a-entity>
+
     <a-entity
             id="collision-material"
             physx-contact-material="materialA: default; materialB: default; friction: 0.5; restitution: 0.3"
@@ -134,28 +156,6 @@
             color="blue"
             position="0 0.5 -1.5"
     ></a-box>
-
-    <a-entity ref="rig" id="rig" position="0 0 0" rotation="0 0 0" progressive-controls>
-        <a-camera camera wasd-control look-controls position="0 1.65 0" super-hands>
-            <a-entity raycaster></a-entity>
-        </a-camera>
-
-        <a-entity
-                id="leftHand"
-                class="left-controller"
-                super-hands
-                hand-controls="hand: left"
-                physx-body="type: kinematic"
-        ></a-entity>
-        <a-entity
-                id="rightHand"
-                class="right-controller"
-                super-hands
-                shooting
-                hand-controls="hand: right"
-                physx-body="type: kinematic"
-        ></a-entity>
-    </a-entity>
 </a-scene>
 
 <script src="scenes/storybook/main.js"></script>
